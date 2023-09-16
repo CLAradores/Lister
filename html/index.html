@@ -1,31 +1,518 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- lightbox -->
+    <link href="/lightbox2-2.11.4/dist/css/lightbox.css" rel="stylesheet" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- fontfamily -->
+    <!-- fon awesome -->
+    <script
+      src="https://kit.fontawesome.com/cc433e9725.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dancing+Script&family=Kanit:ital,wght@0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400;1,500;1,900&family=Oswald:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,500;1,400;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font-end -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0 " />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- swiper.js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- swiper end -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <title>Lister</title>
+    <style>
+      .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: auto;
+        height: auto;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+      }
+    </style>
   </head>
   <body>
     <!-- navbar start -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand me-5 h1" href="#"
+          ><strong class="fs-3">Lister</strong></a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbeer"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ms-5" id="navbeer">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Album</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                >Playlist
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Event</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
 
+          <div id="sign">
+            <a class="ms-3" href="#">Sign up</a>
+            <a class="ms-3" href="#">Log in</a>
+          </div>
+        </div>
+      </div>
+    </nav>
     <!-- navbar end -->
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+
+    <!--######### showcase  #########-->
+    <section id="hero">
+      <div class="container container-fluid">
+        <div class="row container-liquid" style="height: 100%">
+          <div class="col-xl-3"></div>
+          <div
+            id="heading"
+            class="text-center col-xl-6 position-absolute top-50 start-50 translate-middle"
+          >
+            <h2>Rhythms & Melodies Galore: Dive into the Soundscape of</h2>
+
+            <h1 id="lister" class="pe-3">L I S T E R</h1>
+
+            <p class="lead">
+              Where Music Comes to Life. Immerse Yourself in Soundscapes: Your
+              Musical Journey Awaits. Dive into the Melodic Ocean: Find Your
+              Perfect Tune.
+            </p>
+            <button type="button" class="btn btn-outline-light">
+              Discover<i class="fa-solid fa-angles-right"></i>
+            </button>
+          </div>
+          <div class="col-xl-3"></div>
+        </div>
+      </div>
+    </section>
+    <!-- show-case-end -->
+    <!-- New Album -->
+    <section class="album bg-black text-light">
+      <div id="new-album" class="container">
+        <div class="row">
+          <div class="col-xl-3"></div>
+          <div id="middle" class="text-center mt-5 col-xl-6">
+            <p>See whar's new</p>
+            <h2 class="mt-4">L A T E S T &nbsp &nbsp A L B U M S</h2>
+            <p class="mt-5">
+              Curious to know what's hitting the airwaves lately? Dive into our
+              'See What's New' section and stay in the loop with the latest
+              album releases from your favorite artists. From chart-topping hits
+              to hidden gems, we've got your musical cravings covered. Discover
+              the freshest sounds and keep your playlist up-to-date with our
+              regularly updated collection of the hottest releases in the music
+              industry.
+            </p>
+          </div>
+          <div class="col-xl-3"></div>
+        </div>
+
+        <!-- Swiper -->
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card" style="width: 15rem">
+                <a
+                  href="/album1/ab1.png"
+                  data-lightbox="image"
+                  data-title="Zach Bryan is the eponymous fourth studio album by American singer-songwriter Zach Bryan. It was released on August 25, 2023, through Belting Bronco and Warner. Entirely self-produced, it features guest appearances by the War and Treaty, Sierra Ferrell, Kacey Musgraves and the Lumineers. The album debuted atop the US Billboard 200 with the biggest streaming week for a rock album. Its lead single "
+                >
+                  <img src="/album1/ab1.png" alt="images" />
+                </a>
+                <div class="card-body text-center">
+                  <div class="card-title"><strong>Zach Bryan</strong></div>
+                  <div class="card-text">Lorem ipsum dolor sit amet.</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card" style="width: 15rem">
+                <a
+                  href="/album1/ab3.jpg"
+                  data-lightbox="image"
+                  data-title="Utopia (stylized in all caps) is the fourth studio album by American rapper Travis Scott. It was released through Cactus Jack and Epic Records on July 28, 2023. The album features guest appearances from Teezo Touchdown, Drake, Playboi Carti, Beyoncé, Rob49, 21 Savage, the Weeknd, Swae Lee, Yung Lean, Dave Chappelle, Young Thug, Westside Gunn, Kid Cudi, Bad Bunny, SZA, Future, and James Blake. "
+                >
+                  <img src="/album1/ab3.jpg" alt="images" />
+                </a>
+                <div class="card-body text-center">
+                  <div class="card-title"><strong>Utopia</strong></div>
+                  <div class="card-text">Lorem ipsum dolor sit amet.</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card" style="width: 15rem">
+                <a
+                  href="/album1/ab4.jpg"
+                  data-lightbox="image"
+                  data-title="SOS is the second studio album by American singer-songwriter SZA. It was released through Top Dawg Entertainment and RCA Records on December 9, 2022.[1] The album features guest appearances from Don Toliver, Phoebe Bridgers, Travis Scott, and the late Ol' Dirty Bastard.[2] SZA worked with a variety of record producers and songwriters such as Babyface, Jeff Bhasker, Benny Blanco, Rodney Jerkins, DJ Dahi, Ant Clemons and Lizzo.[3] It serves as the follow-up to SZA's previous album Ctrl (2017)."
+                >
+                  <img src="/album1/ab4.jpg" alt="images" />
+                </a>
+                <div class="card-body text-center">
+                  <div class="card-title"><strong>SOS</strong></div>
+                  <div class="card-text">ZSA</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="card" style="width: 15rem">
+                  <img src="/album1/ab5.avif" alt="images" />
+                  <div class="card-body text-center">
+                    <div class="card-title"><strong>LOVER</strong></div>
+                    <div class="card-text">Taylor Swift</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="card" style="width: 15rem">
+                  <img src="/album1/ab6.jpg" alt="images" />
+                  <div class="card-body text-center">
+                    <div class="card-title">
+                      <strong>American Heartbreak</strong>
+                    </div>
+                    <div class="card-text">Zach Bryan</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="card" style="width: 15rem">
+                  <img src="/album1/ab7.jpg" alt="images" />
+                  <div class="card-body text-center">
+                    <div class="card-title"><strong>Austin</strong></div>
+                    <div class="card-text">Post Malone</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="card" style="width: 15rem">
+                  <img src="/album1/ab8.jpg" alt="images" />
+                  <div class="card-body text-center">
+                    <div class="card-title"><strong>Sour</strong></div>
+                    <div class="card-text">Olivia Rodrigo</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="card" style="width: 15rem">
+                  <img src="/album1/ab9.jpg" alt="images" />
+                  <div class="card-body text-center">
+                    <div class="card-title"><strong>Starboy</strong></div>
+                    <div class="card-text">The Weeknd</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="card" style="width: 15rem">
+                  <img src="/album1/ab2.jpg" alt="images" />
+                  <div class="card-body text-center">
+                    <div class="card-title"><strong>Midnights</strong></div>
+                    <div class="card-text">Taylor Swift</div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- For Sale -->
+    <section>
+      <div id="bg-mid" class="bg-black text-light">
+        <div id="sale" class="container">
+          <div class="row">
+            <div class="col-xl-3"></div>
+            <div id="middle" class="text-center mt-5 col-xl-6">
+              <p>See whar's new</p>
+              <h2 class="mt-4">B U Y &nbsp W H A T ' S&nbsp N E W</h2>
+            </div>
+            <div class="col-xl-3"></div>
+          </div>
+          <!-- pictures -->
+          <div id="pic-album" class="g-4 justify-content-center pt-5 row">
+            <!-- swiper -->
+
+            <!-- start -->
+            <div class="card" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+            <div class="card col-xl-2" style="width: 15rem">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start">
+                <div class="card-title"><strong>SAM SMITH</strong></div>
+                <div class="card-text">Lorem ipsum dolor sit amet.</div>
+              </div>
+            </div>
+          </div>
+          <div class="justify-content-start text-center mt-3 pb-3">
+            <a href="#" class="btn btn-outline-light"
+              >Load More<i class="fa-solid fa-angles-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- song -->
+      <section id="song">
+        <div class="container">
+          <div
+            class="d-flex justify-content-between text-start align-items-center"
+          >
+            <div class="card col-xl-2 m-5" style="width: auto">
+              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
+              <div class="card-body text-start bg-light">
+                <div class="card-title">
+                  <strong>A Sky Full Of Stars</strong>
+                </div>
+                <div class="card-text mb-3">COLD PLAY</div>
+                <audio
+                  controls
+                  src="/audio/@coldplay  - A Sky Full Of Stars (Lyrics) (320 kbps).mp3"
+                ></audio>
+              </div>
+            </div>
+            <div>
+              <h2><strong>T O P &nbsp H I T S</strong></h2>
+              <p class="lead">
+                As the radiant sun slowly descended below the distant, rolling
+                hills, casting a breathtaking palette of warm, golden hues
+                across the tranquil forest that stretched endlessly into the
+                horizon, a magnificent symphony of nature's awe-inspiring
+                wonders began to unfold: high above, a diverse chorus of birds,
+                each species contributing its unique and melodious voice, joined
+                together in harmonious union, their enchanting tunes
+                reverberating through the stillness of the forest, creating a
+                captivating and ethereal melody that seemed to transcend time
+                itself; simultaneously, a gentle, caressing breeze, infused with
+                the delicate scent of pine and earth, whispered through the
+                countless leaves of the majestic, ancient trees, their rustling
+                leaves forming a soothing, rhythmic cadence, beckoning all who
+                ventured here to embrace the profound serenity and tranquility
+                that this enchanting woodland sanctuary had to offer, a haven
+                where one could lose themselves in the beauty of the natural
+                world and find solace in the symphony of life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </section>
+    <!-- Swiper -->
+    <!-- swiper CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- CDN end -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <!-- lightbox -->
+    <script src="/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.js"></script>
   </body>
 </html>
