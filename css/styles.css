@@ -62,22 +62,23 @@ nav .container a {
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
+  font-size: 15rem;
 }
 @keyframes lister {
   0% {
-    text-shadow: 0px 0px 4px #fff;
+    text-shadow: 0px 0px 5px #fff;
   }
   25% {
-    text-shadow: -10px 0px 4px #fff;
+    text-shadow: -15px 0px 4px #fff;
   }
   50% {
-    text-shadow: -20px 0px 4px #fff;
+    text-shadow: -30px 0px 3px #fff;
   }
   75% {
-    text-shadow: -10px 0px 4px #fff;
+    text-shadow: -15px 0px 3px #fff;
   }
   100% {
-    text-shadow: 0px 0px 4px #fff;
+    text-shadow: 0px 0px 3px #fff;
   }
 }
 a {
@@ -111,4 +112,10 @@ a {
   background: url(/img/hero-img/isa/bg-4.jpg) no-repeat;
   background-size: auto;
   background-attachment: fixed;
+}
+#artist {
+  padding-top: 10rem;
+}
+.artist {
+  margin: 1rem;
 }
