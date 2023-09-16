@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- lightbox -->
     <link href="/lightbox2-2.11.4/dist/css/lightbox.css" rel="stylesheet" />
     <link
@@ -77,7 +79,7 @@
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Album</a>
+              <a class="nav-link" href="#album">Album</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -134,9 +136,9 @@
               Musical Journey Awaits. Dive into the Melodic Ocean: Find Your
               Perfect Tune.
             </p>
-            <button type="button" class="btn btn-outline-light">
+            <a href="#album" type="button" class="btn btn-outline-light">
               Discover<i class="fa-solid fa-angles-right"></i>
-            </button>
+            </a>
           </div>
           <div class="col-xl-3"></div>
         </div>
@@ -144,7 +146,7 @@
     </section>
     <!-- show-case-end -->
     <!-- New Album -->
-    <section class="album bg-black text-light">
+    <section id="album" class="album bg-black text-light pb-5">
       <div id="new-album" class="container">
         <div class="row">
           <div class="col-xl-3"></div>
@@ -160,6 +162,13 @@
               regularly updated collection of the hottest releases in the music
               industry.
             </p>
+            <button
+              class="btn btn-outline-light"
+              onclick="document.getElementById('subscribe').style.display='block'"
+              style="width: auto"
+            >
+              Login
+            </button>
           </div>
           <div class="col-xl-3"></div>
         </div>
@@ -327,112 +336,193 @@
             <!-- swiper -->
 
             <!-- start -->
-            <div class="card" style="width: 15rem">
+
+            <div
+              class="card"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
                 <div class="card-text">Lorem ipsum dolor sit amet.</div>
               </div>
             </div>
-            <div class="card col-xl-2" style="width: 15rem">
+            <div
+              class="card col-xl-2"
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              style="width: 15rem"
+            >
               <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
               <div class="card-body text-start">
                 <div class="card-title"><strong>SAM SMITH</strong></div>
@@ -441,341 +531,642 @@
             </div>
           </div>
           <div class="justify-content-start text-center mt-3 pb-5">
-            <a href="#" class="btn btn-outline-light"
+            <a href="#" class="btn btn-outline-dark"
               >Load More<i class="fa-solid fa-angles-right"></i
             ></a>
           </div>
         </div>
       </div>
-
-      <!-- song -->
-      <section id="song">
-        <div class="container">
-          <div
-            class="d-flex justify-content-between text-start align-items-center"
-          >
-            <div class="card col-xl-2 m-5 d-none d-sm-flex" style="width: auto">
-              <img src="/img/hero-img/dalawa/q9.jpg" alt="images" />
-              <div class="card-body text-start bg-light">
-                <div class="card-title">
-                  <strong>A Sky Full Of Stars</strong>
-                </div>
-                <div class="card-text mb-3">COLD PLAY</div>
-                <audio
-                  controls
-                  src="/audio/@coldplay  - A Sky Full Of Stars (Lyrics) (320 kbps).mp3"
-                ></audio>
-              </div>
-            </div>
-            <div>
-              <h2><strong>T O P &nbsp H I T S</strong></h2>
-              <p class="lead">
-                As the radiant sun slowly descended below the distant, rolling
-                hills, casting a breathtaking palette of warm, golden hues
-                across the tranquil forest that stretched endlessly into the
-                horizon, a magnificent symphony of nature's awe-inspiring
-                wonders began to unfold: high above, a diverse chorus of birds,
-                each species contributing its unique and melodious voice, joined
-                together in harmonious union, their enchanting tunes
-                reverberating through the stillness of the forest, creating a
-                captivating and ethereal melody that seemed to transcend time
-                itself; simultaneously, a gentle, caressing breeze, infused with
-                the delicate scent of pine and earth, whispered through the
-                countless leaves of the majestic, ancient trees, their rustling
-                leaves forming a soothing, rhythmic cadence, beckoning all who
-                ventured here to embrace the profound serenity and tranquility
-                that this enchanting woodland sanctuary had to offer, a haven
-                where one could lose themselves in the beauty of the natural
-                world and find solace in the symphony of life.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Artist -->
-      <section class="bg-success">
-        <div id="artist">
-          <div class="container">
-            <div class="row g4">
-              <div class="col-xl-3 bg-dark text-light artist">
-                <div class="p-3 mt-4 mb-4">
-                  <p>See what's new</p>
-                  <h5>
-                    <strong
-                      >T H I S &nbsp&nbsp W E E K ' S &nbsp&nbspT O P</strong
-                    >
-                  </h5>
-                  <div class="mt-5">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 bg-dark text-light artist">
-                <div class="p-3 mt-4 mb-4">
-                  <p>See what's new</p>
-                  <h5>
-                    <strong
-                      >T H I S &nbsp&nbsp W E E K ' S &nbsp&nbspT O P</strong
-                    >
-                  </h5>
-                  <div class="mt-5">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 bg-dark text-light artist">
-                <div class="p-3 mt-4 mb-4">
-                  <p>See what's new</p>
-                  <h5>
-                    <strong
-                      >T H I S &nbsp&nbsp W E E K ' S &nbsp&nbspT O P</strong
-                    >
-                  </h5>
-                  <div class="mt-5">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="mt-3">
-                    <div class="d-flex">
-                      <img
-                        src="/img/hero-img/weeksnew/wt1.jpg"
-                        width="80"
-                        alt="img"
-                      />
-                      <div class="ps-4">
-                        <h6><strong>SAM SMITH</strong></h6>
-                        <h8>Underground</h8>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </section>
+    <!-- song -->
+    <section id="song">
+      <div class="container">
+        <div class="row align-items-center mt-5">
+          <div class="col-xl-5 col-md-12 m-5" style="width: auto">
+            <img
+              src="/img/hero-img/fa.jpg"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+              width="430"
+              alt="image"
+            />
+          </div>
+          <div class="col-xl-5 col-md-12 text-start text-md-white">
+            <h2><strong>T O P &nbsp H I T S</strong></h2>
+            <p><strong>Dua Lipa</strong></p>
+            <p>Dance the Night</p>
+            <p class="lead">
+              As the radiant sun slowly descended below the distant, rolling
+              hills, casting a breathtaking palette of warm, golden hues across
+              the tranquil forest that stretched endlessly into the horizon, a
+              magnificent symphony of nature's awe-inspiring wonders began to
+              unfold: high above.
+            </p>
+            <div class="p-2 bg-dark">
+              <p class="text-light">Dance the Night</p>
+
+              <audio
+                controls
+                src="/audio/@coldplay  - A Sky Full Of Stars (Lyrics) (320 kbps).mp3"
+              ></audio>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Artist -->
+    <section class="bg-white">
+      <div id="artist">
+        <div class="container">
+          <div class="row justify-content-center">
+            <!-- ########## 1st #########-->
+            <div class="col-xl-3 bg-white text-dark artist col-md-6">
+              <div class="p-3 mt-4 mb-4">
+                <p>See what's new</p>
+                <h5>
+                  <strong
+                    >T H I S &nbsp&nbsp W E E K ' S &nbsp&nbspT O P</strong
+                  >
+                </h5>
+                <div class="mt-5">
+                  <div class="d-flex">
+                    <img
+                      src="/img/hero-img/weeksnew/wt1.jpg"
+                      width="80"
+                      alt="img"
+                    />
+                    <div class="ps-4">
+                      <h6><strong>SAM SMITH</strong></h6>
+                      <h8>Underground</h8>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div class="d-flex">
+                    <img
+                      src="/img/hero-img/weeksnew/wt2.jpg"
+                      width="80"
+                      alt="img"
+                    />
+                    <div class="ps-4">
+                      <h6><strong>POWER PLAY</strong></h6>
+                      <h8>In my mind</h8>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div class="d-flex">
+                    <img
+                      src="/img/hero-img/weeksnew/wt3.jpg"
+                      width="80"
+                      alt="img"
+                    />
+                    <div class="ps-4">
+                      <h6><strong>CRISTINNE SMITH</strong></h6>
+                      <h8>My music</h8>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div class="d-flex">
+                    <img
+                      src="/img/hero-img/weeksnew/wt4.jpg"
+                      width="80"
+                      alt="img"
+                    />
+                    <div class="ps-4">
+                      <h6><strong>THE MUSIC BAND</strong></h6>
+                      <h8>Underground</h8>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div class="d-flex">
+                    <img
+                      src="/img/hero-img/weeksnew/wt5.jpg"
+                      width="80"
+                      alt="img"
+                    />
+                    <div class="ps-4">
+                      <h6><strong>CREATIVE LYRICS</strong></h6>
+                      <h8>Song and staff</h8>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div class="d-flex">
+                    <img
+                      src="/img/hero-img/weeksnew/wt6.jpg"
+                      width="80"
+                      alt="img"
+                    />
+                    <div class="ps-4">
+                      <h6><strong>THE CULTURE</strong></h6>
+                      <h8>Pop songs</h8>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--####### 2nd ########3-->
+            <div
+              class="col-xl-3 bg-light border border-opacity-75 text-dark artist col-md-6"
+            >
+              <div class="p-3 mt-4 mb-4">
+                <p>See what's new</p>
+                <h5>
+                  <strong
+                    >N &nbsp E &nbsp W &nbsp &nbsp H&nbspI &nbspT &nbspS</strong
+                  >
+                </h5>
+                <div class="mt-5 border-bottom pb-1">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img
+                          src="/img/hero-img/weeksnew/a4.jpg"
+                          width="80"
+                          alt="img"
+                        />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 border-bottom pb-1">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img
+                          src="/img/hero-img/weeksnew/a3.jpg"
+                          width="80"
+                          alt="img"
+                        />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 border-bottom pb-1">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img
+                          src="/img/hero-img/weeksnew/a2.jpg"
+                          width="80"
+                          alt="img"
+                        />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 border-bottom pb-1">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img
+                          src="/img/hero-img/weeksnew/a1.jpg"
+                          width="80"
+                          alt="img"
+                        />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 border-bottom pb-1">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img
+                          src="/img/hero-img/weeksnew/s2.jpg"
+                          width="80"
+                          alt="img"
+                        />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img
+                          src="/img/hero-img/weeksnew/s1.jpg"
+                          width="80"
+                          alt="img"
+                        />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--$$$$$$$$$$$$ 3rd $$$$$$$$$-->
+            <div
+              class="col-xl-3 bg-light border border-opacity-75 text-dark artist col-m-6"
+            >
+              <div class="p-3 mt-4 mb-4">
+                <p>See what's new</p>
+                <h5>
+                  <strong>T H I S &nbsp W E E K ' S &nbspT O P</strong>
+                </h5>
+
+                <!-- start -->
+                <div class="mt-5 border-bottom pb-1">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img src="/album1/ab1.png" width="80" alt="img" />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 border-bottom pb-1">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img src="/album1/ab2.webp" width="80" alt="img" />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 border-bottom pb-1">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img src="/album1/ab3.jpg" width="80" alt="img" />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 border-bottom pb-1">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img src="/album1/ab4.jpg" width="80" alt="img" />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 border-bottom pb-1">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img src="/album1/ab5.avif" width="80" alt="img" />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-3 border-bottom pb-1">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div>
+                      <div class="d-flex">
+                        <img src="/album1/ab6.jpg" width="80" alt="img" />
+                        <div class="ps-4">
+                          <h6><strong>SAM SMITH</strong></h6>
+                          <h8>Underground</h8>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="d-flex flex-column text-center">
+                      <div>
+                        <a href="#"
+                          ><i
+                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                          ></i
+                        ></a>
+                      </div>
+                      <i class="fa-regular fa-heart mt-2"></i>
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- subscribe now -->
+    <section>
+      <div class="foot-bg">
+        <div id="wagpo" class="container text-center pt-5 pb-5">
+          <h3 class="mt-5"><strong>G E T &nbsp IN &nbsp T O U C H</strong></h3>
+          <form action="process.php" class="text-center mt-5">
+            <div class="d-flex justify-content-center">
+              <div class="first m-3 text-start">
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="second m-3 text-start">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your e-mail"
+                />
+              </div>
+            </div>
+            <div class="d-flex justify-content-between p-5">
+              <div id="fourth" class="m-3 text-start">
+                <label for="password">Password:</label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="Enter your password"
+                />
+              </div>
+              <div id="fifth" class="m-3 text-start">
+                <label for="subject">Subject:</label>
+                <input type="text" name="subject" id="subjext" />
+              </div>
+            </div>
+            <div id="sixth">
+              <label class="pb-2" for="message">Message:</label>
+              <textarea
+                name="message"
+                id="messge"
+                cols="10"
+                rows="5"
+                placeholder="Enter your message"
+              ></textarea>
+            </div>
+          </form>
+          <a href="#" class="btn btn-outline-light">Submit</a>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row align-items-center text-start">
+          <div class="col-xl-4 text-light">
+            <h3>Lister</h3>
+            <p>Copyright &copy2023 All rights reserved</p>
+          </div>
+          <div id="icon-2" class="col-xl-4 text-center">
+            <a href="#"><i class="fa-brands fa-facebook p-2"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram p2"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube p-2"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin p-2"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter p-2"></i></a>
+          </div>
+          <div class="col-xl-4 text-end">
+            <a href="#" class="btn btn-outline-light">
+              <i class="fa-solid fa-arrow-up"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Modal -->
+    <div id="subscribe" class="modal text-dark">
+      <form
+        class="modal-content animate"
+        action="/action_page.php"
+        method="post"
+      >
+        <div class="imgcontainer">
+          <span
+            onclick="document.getElementById('subscribe').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <img src="/img/aaas.png" width="10" alt="Avatar" class="avatar" />
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember" /> Remember
+            me
+          </label>
+        </div>
+
+        <div class="container" style="background-color: #f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('subscribe').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
     <!-- Swiper -->
     <!-- swiper CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
@@ -808,7 +1199,24 @@
         },
       });
     </script>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- lightbox -->
     <script src="/lightbox2-2.11.4/dist/js/lightbox-plus-jquery.js"></script>
+    <!-- w3shcool -->
+    <script>
+      // Get the modal
+      var modal = document.getElementById("subscribe");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>
