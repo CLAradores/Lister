@@ -14,7 +14,8 @@ h1,
 h2,
 h3,
 h4,
-h4 {
+h5,
+h6 {
   font-family: "Archivo Narrow", sans-serif;
 }
 nav .container a .navbar-brand {
@@ -24,9 +25,17 @@ nav .container a .navbar-brand {
 nav .container a {
   color: #fff;
 }
+
+nav .container ul li a:hover {
+  color: #d00d0d;
+  transition: width 0.3s;
+}
+nav .container .dropdown-menu li a {
+  color: #333;
+}
 #hero {
   background: no-repeat center center/cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("/img/hero-img/bg-1.jpg");
 
   height: 100vh;
@@ -40,11 +49,13 @@ nav .container a {
   0% {
     scale: 100%;
 
-    background-image: url(/img/hero-img/bg-2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/img/hero-img/bg-2.jpg);
   }
   25% {
     scale: 105%;
-    background-image: url(/img/hero-img/bg-2.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(/img/hero-img/bg-2.jpg);
   }
   50% {
     scale: 100%;
@@ -66,19 +77,19 @@ nav .container a {
 }
 @keyframes lister {
   0% {
-    text-shadow: 0px 0px 5px #fff;
+    text-shadow: 0px 0px 5px #ffffff;
   }
   25% {
-    text-shadow: -15px 0px 4px #fff;
+    text-shadow: -15px 0px 4px #ffffff76;
   }
   50% {
-    text-shadow: -30px 0px 3px #fff;
+    text-shadow: -30px 0px 3px #ffffff7f;
   }
   75% {
-    text-shadow: -15px 0px 3px #fff;
+    text-shadow: -15px 0px 3px #ffffff7b;
   }
   100% {
-    text-shadow: 0px 0px 3px #fff;
+    text-shadow: 0px 0px 3px #ffffff77;
   }
 }
 a {
@@ -96,6 +107,7 @@ a {
 }
 #navbar {
   background-color: #333;
+  opacity: 0.8;
 }
 /* section */
 #new-album {
@@ -109,10 +121,13 @@ a {
 }
 
 #song {
-  background: url(/img/hero-img/isa/bg-4.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/hero-img/isa/bg-4.jpg);
   background-size: auto;
   background-attachment: fixed;
+  color: #04aa6d;
 }
+
 #artist {
   padding: 5rem 0;
 }
@@ -120,8 +135,10 @@ a {
   margin: 1rem;
 }
 .foot-bg {
-  background: url(/img/hero-img/bg-2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(/img/hero-img/bg-2.jpg);
   background-attachment: fixed;
+  color: #04aa6d;
 }
 form .first,
 form .second {
@@ -149,13 +166,13 @@ form #fifth input,
 label {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #fff;
+  color: #04aa6d;
 }
 form .first input::placeholder,
 form .second input::placeholder,
 form #fourth input::placeholder,
 #sixth textarea::placeholder {
-  color: #333;
+  color: #1d4f24;
 }
 form #fourth,
 form #fifth {
@@ -322,4 +339,93 @@ span.psw {
 }
 #subscribe form {
   width: 30%;
+}
+/* review */
+.card-body {
+  padding: 0.5rem;
+}
+.review {
+  font-size: 0.9rem;
+}
+.review a {
+  color: #333;
+}
+.review i {
+  font-size: 0.7rem;
+}
+.d-flex .m-0 {
+  font-size: 0.8rem;
+}
+@media (max-width: 1200px) {
+  #song p,
+  #song h2,
+  #song h6 {
+    color: #fff;
+  }
+}
+@media (max-width: 768px) {
+  .foot-bg input,
+  .foot-bg label {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+@media (max-width: 690) {
+  #song .container img {
+    width: 50%;
+  }
+}
+
+/* subscribe */
+.box-1 {
+  margin: 1rem;
+}
+#premium .bx-1 {
+  color: #ffabe3;
+}
+#premium .bx-1 .p-1,
+#premium .bx-1 .p-2 {
+  background-color: #ffabe3;
+  color: black;
+}
+#premium #last-1 .p-2 {
+  margin-top: 6rem;
+}
+.bx-2 .d-1,
+.bx-2 .p-2 {
+  background-color: #f7d437;
+  color: black;
+}
+.bx-2 {
+  color: #f7d437;
+}
+.bx-3 {
+  color: #adffff;
+}
+.bx-3 .p-1,
+.bx-3 .p-2 {
+  background-color: #adffff;
+  color: black;
+}
+#check-up .check-up-1 input {
+  border-bottom: #ffabe3 solid 3px;
+}
+#check-up .check-up-1 input::placeholder,
+#check-up .check-up-1 label {
+  color: #ffabe3;
+}
+#check-up .check-up-2 input {
+  border-bottom: #f7d437 solid 3px;
+}
+#check-up .check-up-2 input::placeholder,
+#check-up .check-up-2 label {
+  color: #f7d437;
+}
+.check-up-3 #fourth input {
+  border-bottom: #adffff solid 3px;
+}
+.check-up-3 #fourth input::placeholder,
+.check-up-3 #fourth label {
+  color: #adffff;
 }
