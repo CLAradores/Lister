@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- icon -->
+    <link rel="icon" type="image/x-icon" href="/img/icon.png" />
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- lightbox -->
@@ -38,25 +40,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
     <title>Lister</title>
-    <style>
-      .swiper {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-      }
-
-      .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: auto;
-        height: auto;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-      }
-    </style>
   </head>
   <body>
     <!-- navbar start -->
@@ -82,21 +65,7 @@
               <a class="nav-link" href="#">Album</a>
             </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-                >Playlist
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+              <a class="nav-link" href="platlist.html">Playlist </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Event</a>
@@ -118,6 +87,9 @@
             >
               Login
             </button>
+            <a href="#">
+              <i class="fa-solid fa-cart-shopping text-light ms-3"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -139,92 +111,145 @@
     <section id="event-card" class="mt-5 pb-5">
       <div class="container container-fluid">
         <div class="row justify-content-center">
-          <div class="col-md-6 col-xl-3 img-fluid justify-content-center event">
+          <div
+            class="col-md-6 col-xl-3 img-fluid event"
+            class="text-center mt-4"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
             <img src="/img/hero-img/e1.jpg" width="100%" alt="image" />
 
-            <div class="text-center mt-4">
+            <div class="text-center">
               <h3>DJ NIGHT PARTY</h3>
-              <p>VIP Sala &nbsp | &nbsp Septerber 31,2023</p>
+              <p>VIP Sala &nbsp | &nbsp Septerber 18,2023</p>
               <p class="see">S E E &nbsp E V E N T</p>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3 img-fluid event">
+          <div
+            class="col-md-6 col-xl-3 img-fluid event"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <div class="">
               <img src="/img/hero-img/e2.jpg" width="100%" alt="image" />
             </div>
             <div class="text-center mt-4">
-              <h3>DJ NIGHT PARTY</h3>
-              <p>VIP Sala &nbsp | &nbsp Septerber 31,2023</p>
+              <h3>THE MISSION</h3>
+              <p>Revel &nbsp | &nbsp Septerber 20,2023</p>
               <p class="see">S E E &nbsp E V E N T</p>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3 img-fluid event">
+          <div
+            class="col-md-6 col-xl-3 img-fluid event"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000"
+          >
             <div class="">
               <img src="/img/hero-img/e3.jpg" width="100%" alt="image" />
             </div>
             <div class="text-center mt-4">
-              <h3>DJ NIGHT PARTY</h3>
-              <p>VIP Sala &nbsp | &nbsp Septerber 31,2023</p>
+              <h3>PLANET IBIZA</h3>
+              <p>Black Market Manila | &nbsp October 23,2023</p>
               <p class="see">S E E &nbsp E V E N T</p>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3 img-fluid event">
+          <div
+            class="col-md-6 col-xl-3 img-fluid event"
+            class="text-center mt-4"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
             <div class="">
               <img src="/img/hero-img/e4.jpg" width="100%" alt="image" />
             </div>
             <div class="text-center mt-4">
               <h3>DJ NIGHT PARTY</h3>
-              <p>VIP Sala &nbsp | &nbsp Septerber 31,2023</p>
+              <p>VIP Sala &nbsp | &nbsp Septerber 21,2023</p>
               <p class="see">S E E &nbsp E V E N T</p>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3 img-fluid event">
+          <div
+            class="col-md-6 col-xl-3 img-fluid event"
+            class="text-center mt-4"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <div class="">
               <img src="/img/hero-img/e5.jpg" width="100%" alt="image" />
             </div>
             <div class="text-center mt-4">
-              <h3>DJ NIGHT PARTY</h3>
-              <p>VIP Sala &nbsp | &nbsp Septerber 31,2023</p>
+              <h3>THE MISSION</h3>
+              <p>VIP Sala &nbsp | &nbsp October 25,2023</p>
               <p class="see">S E E &nbsp E V E N T</p>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3 img-fluid event">
+          <div
+            class="col-md-6 col-xl-3 img-fluid event"
+            class="text-center mt-4"
+            class="text-center mt-4"
+            data-aos="flip-right"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000"
+          >
             <div class="">
               <img src="/img/hero-img/e6.jpg" width="100%" alt="image" />
             </div>
             <div class="text-center mt-4">
-              <h3>DJ NIGHT PARTY</h3>
-              <p>VIP Sala &nbsp | &nbsp Septerber 31,2023</p>
+              <h3>PLANET IBIZA</h3>
+              <p>VIP Sala &nbsp | &nbsp December 15,2023</p>
               <p class="see">S E E &nbsp E V E N T</p>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3 img-fluid event">
+          <div
+            class="col-md-6 col-xl-3 img-fluid event"
+            class="text-center mt-4"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="1000"
+          >
             <div class="">
               <img src="/img/hero-img/e7.jpg" width="100%" alt="image" />
             </div>
             <div class="text-center mt-4">
               <h3>DJ NIGHT PARTY</h3>
-              <p>VIP Sala &nbsp | &nbsp Septerber 31,2023</p>
+              <p>VIP Sala &nbsp | &nbsp Septerber 26,2023</p>
               <p class="see">S E E &nbsp E V E N T</p>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3 img-fluid event">
+          <div
+            class="col-md-6 col-xl-3 img-fluid event"
+            class="text-center mt-4"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
+          >
             <div class="">
               <img src="/img/hero-img/e8.jpg" width="100%" alt="image" />
             </div>
             <div class="text-center mt-4">
-              <h3>DJ NIGHT PARTY</h3>
-              <p>VIP Sala &nbsp | &nbsp Septerber 31,2023</p>
+              <h3>THE MISSION</h3>
+              <p>VIP Sala &nbsp | &nbsp November 31,2023</p>
               <p class="see">S E E &nbsp E V E N T</p>
             </div>
           </div>
-          <div class="col-md-6 col-xl-3 img-fluid event">
+          <div
+            class="col-md-6 col-xl-3 img-fluid event"
+            class="text-center mt-4"
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="3000"
+          >
             <div class="">
               <img src="/img/hero-img/e9.jpg" width="100%" alt="image" />
             </div>
             <div class="text-center mt-4">
-              <h3>DJ NIGHT PARTY</h3>
-              <p>VIP Sala &nbsp | &nbsp Septerber 31,2023</p>
+              <h3>PLANET IBIZA</h3>
+              <p>VIP Sala &nbsp | &nbsp October 31,2023</p>
               <p class="see">S E E &nbsp E V E N T</p>
             </div>
           </div>

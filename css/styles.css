@@ -511,3 +511,58 @@ span.psw {
   font-size: 1.5rem;
   font-weight: 1000;
 }
+/* playlist */
+#playlist a {
+  color: #333;
+  text-decoration: none;
+}
+#playlist {
+  padding-top: 13rem;
+}
+.playsheet .text-center:hover {
+  background-color: #048d5b;
+  border-radius: 5px;
+  /* color: black; */
+  transition: ease-out 0.5s;
+}
+/* .music-list {
+  background: url(/img/breadcumb.jpg);
+  background-attachment: fixed;
+}
+.music-list::before {
+  content: "";
+  position: absolute;
+
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.music-list * {
+  z-index: 2;
+} */
+.music-list {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+.img-banner {
+  background: url(/img/hero-img/bg-1.jpg);
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  height: 98vh;
+  justify-content: center;
+}
+.padding-banner {
+  padding: 0 5rem;
+}
+.padding-banner .img-banner {
+  padding: 0 5rem;
+  color: #fff;
+}
+.padding-banner .img-banner h2 {
+  font-size: 3rem;
+  font-weight: 1000;
+}
+.img-head {
+  width: 30vw;
+}
