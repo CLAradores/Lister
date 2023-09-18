@@ -61,1675 +61,1737 @@
     </style>
   </head>
   <body>
-    <!-- navbar start -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
-      <div class="container container-fluid">
-        <a class="navbar-brand me-5" href="index.html"
-          ><strong>Lister</strong></a
-        >
-        <a
-          class="navbar-toggler btn bg-light"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbeer"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </a>
-        <div class="collapse navbar-collapse" id="navbeer">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#hero">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#album">Album</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="platlist.html">Playlist </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="event.html">Event</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact us </a>
-            </li>
-          </ul>
-
-          <div id="sign">
-            <a class="ms-5" href="#">Sign up</a>
-            <button
-              class="btn btn-outline-light"
-              onclick="document.getElementById('subscribe').style.display='block'"
-              style="width: auto"
-            >
-              Login
-            </button>
-            <a href="#">
-              <i class="fa-solid fa-cart-shopping text-light ms-3"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <!-- navbar end -->
-
-    <!--######### showcase  #########-->
-    <section id="hero">
-      <div class="container container-fluid">
-        <div class="row container-liquid" style="height: 100%">
-          <div class="col-xl-3"></div>
-          <div
-            id="heading"
-            class="text-center col-xl-6 position-absolute top-50 start-50 translate-middle"
+    <div
+      data-bs-spy="scroll"
+      data-bs-target="#navbar"
+      data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true"
+    >
+      <!-- navbar start -->
+      <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container container-fluid">
+          <a class="navbar-brand me-5" href="index.html"
+            ><strong>Lister</strong></a
           >
-            <h1
-              id="lister"
-              class="pe-3"
-              data-aos="fade-down"
-              data-aos-duration="2000"
-            >
-              <strong>S o u n d s c a p e</strong>
-            </h1>
+          <a
+            class="navbar-toggler btn bg-light"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbeer"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </a>
+          <div class="collapse navbar-collapse" id="navbeer">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link h-current" aria-current="page" href="#hero"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#album">Album</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="platlist.html">Playlist </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="event.html">Event</a>
+              </li>
 
-            <p class="lead" data-aos="zoom-in-up" data-aos-duration="3000">
-              Where Music Comes to Life. Immerse Yourself in Soundscapes: Your
-              Musical Journey Awaits. Dive into the Melodic Ocean: Find Your
-              Perfect Tune.
-            </p>
-            <a
-              href="#album"
-              type="button"
-              class="btn btn-outline-light"
-              data-aos="zoom-in-up"
-              data-aos-duration="3000"
-            >
-              Discover<i class="fa-solid fa-angles-right"></i>
-            </a>
-          </div>
-          <div class="col-xl-3"></div>
-        </div>
-      </div>
-    </section>
-    <!-- show-case-end -->
-    <!-- New Album -->
-    <section id="album" class="album bg-black text-light pb-5">
-      <div id="new-album" class="container">
-        <div class="row">
-          <div class="col-xl-3"></div>
-          <div id="middle" class="text-center mt-5 col-xl-6">
-            <p data-aos="fade-down" data-aos-duration="3000">See whar's new</p>
-            <h2 class="mt-4" data-aos="fade-down" data-aos-duration="3000">
-              L A T E S T &nbsp &nbsp A L B U M S
-            </h2>
-            <p class="mt-5" data-aos="zoom-in" data-aos-duration="2000">
-              Curious to know what's hitting the airwaves lately? Dive into our
-              'See What's New' section and stay in the loop with the latest
-              album releases from your favorite artists. From chart-topping hits
-              to hidden gems, we've got your musical cravings covered. Discover
-              the freshest sounds and keep your playlist up-to-date with our
-              regularly updated collection of the hottest releases in the music
-              industry.
-            </p>
-            <button
-              class="btn btn-outline-light"
-              data-aos="zoom-in"
-              data-aos-duration="3000"
-              onclick="document.getElementById('subscribe').style.display='block'"
-              style="width: auto"
-            >
-              Login
-            </button>
-          </div>
-          <div class="col-xl-3"></div>
-        </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact us </a>
+              </li>
+            </ul>
 
-        <!-- Swiper -->
-
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="card" style="width: 15rem">
-                <a
-                  href="/album1/ab1.png"
-                  data-lightbox="image"
-                  data-title="Zach Bryan is the eponymous fourth studio album by American singer-songwriter Zach Bryan. It was released on August 25, 2023, through Belting Bronco and Warner. Entirely self-produced, it features guest appearances by the War and Treaty, Sierra Ferrell, Kacey Musgraves and the Lumineers. The album debuted atop the US Billboard 200 with the biggest streaming week for a rock album. Its lead single "
-                >
-                  <img src="/album1/ab1.png" alt="images" />
-                </a>
-                <div class="card-body text-center">
-                  <div class="card-title"><strong>Zach Bryan</strong></div>
-                  <div class="card-text">Zach Bryan</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card" style="width: 15rem">
-                <a
-                  href="/album1/ab3.jpg"
-                  data-lightbox="image"
-                  data-title="Utopia (stylized in all caps) is the fourth studio album by American rapper Travis Scott. It was released through Cactus Jack and Epic Records on July 28, 2023. The album features guest appearances from Teezo Touchdown, Drake, Playboi Carti, Beyoncé, Rob49, 21 Savage, the Weeknd, Swae Lee, Yung Lean, Dave Chappelle, Young Thug, Westside Gunn, Kid Cudi, Bad Bunny, SZA, Future, and James Blake. "
-                >
-                  <img src="/album1/ab3.jpg" alt="images" />
-                </a>
-                <div class="card-body text-center">
-                  <div class="card-title"><strong>Utopia</strong></div>
-                  <div class="card-text">Travis Scott</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card" style="width: 15rem">
-                <a
-                  href="/album1/ab4.jpg"
-                  data-lightbox="image"
-                  data-title="SOS is the second studio album by American singer-songwriter SZA. It was released through Top Dawg Entertainment and RCA Records on December 9, 2022.[1] The album features guest appearances from Don Toliver, Phoebe Bridgers, Travis Scott, and the late Ol' Dirty Bastard.[2] SZA worked with a variety of record producers and songwriters such as Babyface, Jeff Bhasker, Benny Blanco, Rodney Jerkins, DJ Dahi, Ant Clemons and Lizzo.[3] It serves as the follow-up to SZA's previous album Ctrl (2017)."
-                >
-                  <img src="/album1/ab4.jpg" alt="images" />
-                </a>
-                <div class="card-body text-center">
-                  <div class="card-title"><strong>SOS</strong></div>
-                  <div class="card-text">SZA</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card" style="width: 15rem">
-                <a
-                  href="/album1/ab5.avif"
-                  data-lightbox="image"
-                  data-title="Lover is the seventh studio album by American singer-songwriter Taylor Swift. It was released on August 23, 2019 through Republic Records, and is her first album after her departure from Big Machine Records, which resulted in a highly publicized dispute. Swift recorded Lover with producers Jack Antonoff, Joel Little, Louis Bell, and Frank Dukes from November 2018 to February 2019 following her Reputation Stadium Tour (2018) where she felt motivated by the fans, helping her recover her mental health after the controversies leading up to Reputation (2017)."
-                >
-                  <img src="/album1/ab5.avif" alt="images" />
-                </a>
-                <div class="card-body text-center">
-                  <div class="card-title"><strong>LOVER</strong></div>
-                  <div class="card-text">Taylor Swift</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card" style="width: 15rem">
-                <a
-                  href="/album1/ab6.jpg"
-                  data-lightbox="image"
-                  data-title="American Heartbreak is the third studio album by American singer-songwriter Zach Bryan, released on May 20, 2022, through Belting Bronco and Warner Records. It is a triple album and Bryan's major-label debut.[1] The album was preceded by six singles, including Bryan's most successful single to date, Something in the Orange, which reached number 10 on the US Billboard Hot 100.[2] Bryan toured the US until November 2022 in support of the record."
-                >
-                  <img src="/album1/ab6.jpg" alt="images" />
-                </a>
-                <div class="card-body text-center">
-                  <div class="card-title">
-                    <strong>American Heartbreak</strong>
-                  </div>
-                  <div class="card-text">Zach Bryan</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card" style="width: 15rem">
-                <a
-                  href="/album1/ab7.jpg"
-                  data-lightbox="image"
-                  data-title="Austin Richard Post (born July 4, 1995),[1] known professionally as Post Malone, is an American rapper, singer, songwriter, and record producer.[2] Known for his variegated vocals, Malone has gained acclaim for blending genres and subgenres of hip hop, pop, R&B, and trap. His stage name was derived from inputting his birth name into a rap name generator."
-                >
-                  <img src="/album1/ab7.jpg" alt="images" />
-                </a>
-                <div class="card-body text-center">
-                  <div class="card-title"><strong>Austin</strong></div>
-                  <div class="card-text">Post Malone</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card" style="width: 15rem">
-                <a
-                  href="/album1/ab8.webp"
-                  data-lightbox="image"
-                  data-title="Sour (stylized in all caps) is the debut studio album by American singer-songwriter Olivia Rodrigo. It was released on May 21, 2021, by Geffen Records. The album was written by Rodrigo and producer Dan Nigro. Originally planned as an EP, Sour was expanded into a full-length album following the viral success of her debut single, Drivers License."
-                >
-                  <img src="/album1/ab8.webp" alt="images" />
-                </a>
-                <div class="card-body text-center">
-                  <div class="card-title"><strong>Sour</strong></div>
-                  <div class="card-text">Olivia Rodrigo</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card" style="width: 15rem">
-                <a
-                  href="/album1/ab9.jpg"
-                  data-lightbox="image"
-                  data-title="Starboy is the third studio album by Canadian singer the Weeknd, released on November 25, 2016, through XO and Republic Records. It features guest appearances from Daft Punk, Lana Del Rey, Kendrick Lamar, and Future. As the album's executive producers, the Weeknd and Doc McKinney enlisted a variety of producers such as Diplo, Cashmere Cat, Metro Boomin, Frank Dukes, and Labrinth, among others."
-                >
-                  <img src="/album1/ab9.jpg" alt="images" />
-                </a>
-                <div class="card-body text-center">
-                  <div class="card-title"><strong>Starboy</strong></div>
-                  <div class="card-text">The Weeknd</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="card" style="width: 15rem">
-                <a
-                  href="/album1/ab2.webp"
-                  data-lightbox="image"
-                  data-title="Midnights is the tenth studio album by American singer-songwriter Taylor Swift, released on October 21, 2022, via Republic Records. Announced at the 2022 MTV Video Music Awards, Midnights marked Swift's first new body of work since her 2020 indie folk albums, Folklore and Evermore. It is a moody concept album about nocturnal ruminations, written and produced by Swift with longtime collaborator Jack Antonoff."
-                >
-                  <img src="/album1/ab2.webp" alt="images" />
-                </a>
-                <div class="card-body text-center">
-                  <div class="card-title"><strong>Midnights</strong></div>
-                  <div class="card-text">Taylor Swift</div>
-                </div>
-              </div>
+            <div id="sign">
+              <a class="ms-5" href="#">Sign up</a>
+              <button
+                class="btn btn-outline-light"
+                onclick="document.getElementById('subscribe').style.display='block'"
+                style="width: auto"
+              >
+                Login
+              </button>
+              <a href="#">
+                <i class="fa-solid fa-cart-shopping text-light ms-3"></i
+              ></a>
             </div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
-      </div>
-    </section>
-    <!-- For Sale -->
-    <section>
-      <div id="bg-mid" class="bg-light text-dark">
-        <div id="sale" class="container container-fluid">
-          <div class="row">
+      </nav>
+      <!-- navbar end -->
+
+      <!--######### showcase  #########-->
+      <section id="hero">
+        <div class="container container-fluid">
+          <div class="row container-liquid" style="height: 100%">
             <div class="col-xl-3"></div>
             <div
-              id="middle"
-              class="text-center mt-5 col-xl-6"
-              data-aos="fade-down"
-              data-aos-duration="3000"
+              id="heading"
+              class="text-center col-xl-6 position-absolute top-50 start-50 translate-middle"
             >
-              <p>See whar's new</p>
-              <h2 class="mt-4">B U Y &nbsp W H A T ' S&nbsp N E W</h2>
-            </div>
-            <div class="col-xl-3"></div>
-          </div>
-          <!-- pictures -->
-          <div id="pic-album" class="g-4 justify-content-center pt-5 row">
-            <!-- swiper -->
+              <h1
+                id="lister"
+                class="pe-3"
+                data-aos="fade-down"
+                data-aos-duration="2000"
+              >
+                <strong>S o u n d s c a p e</strong>
+              </h1>
 
-            <!-- start -->
-
-            <div
-              id="tatic"
-              class="card"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab3.jpg" alt="images" />
-
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>Utopia</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Travis Scott
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$1.98</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.97 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 2.9k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 2 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab9.jpg" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>Starboy</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      The Weeknd
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$2.49</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.98 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 3.9k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 3 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-left"
-              data-aos-duration="2000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab8.webp" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>Sour</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Olivia Rodrigo
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$1.99</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.98 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 2.9k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 4 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab1.png" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>Zach Bryan</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Zach Bryan
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$2.49</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.95 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 2.5k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 5 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab4.jpg" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>SOS</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      SZA
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$1.99</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.98 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 1.8k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 6 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab2.webp" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>Midnights</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Taylor Smith
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$1.99</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.96 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 1.7k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 7 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-left"
-              data-aos-duration="2000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab5.avif" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>Lover</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Taylor Smith
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$1.89</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.98 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 2.9k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 8 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab6.jpg" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title">
-                      <strong>American Heartbreak</strong>
-                    </div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Zach Byan
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$2.49</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.98 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 3.5k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 9 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab7.jpg" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>Austin</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Post Malone
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$3.99</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.99 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 5.9k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 10 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab10.webp" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title">
-                      <strong>Paint The Town Red</strong>
-                    </div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Doja Cat
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$1.99</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.94 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 1.9k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 11 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-left"
-              data-aos-duration="2000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab11.webp" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>Last Night</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Morgan Wallen
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$2.49</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.98 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 2.9k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 12 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab12.jpg" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>Snooze</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      SZA
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$2.49</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.98 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 2.6k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 13 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-right"
-              data-aos-duration="3000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab13.png" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title">
-                      <strong>What Was I Made For?</strong>
-                    </div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Billie Eilish
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$2.99</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.99 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 4.9k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 14 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-right"
-              data-aos-duration="2000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab14.webp" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title">
-                      <strong>Last Time I Saw You</strong>
-                    </div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Nicki Minaj
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$2.99</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.98 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 3.6k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 15 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-left"
-              data-aos-duration="2000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab15.jpg" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>Religiously</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Bailey Zimmerman
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$3.99</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.99 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 5.9k</p>
-                </div>
-              </div>
-            </div>
-            <!-- 16 -->
-            <div
-              id="tatic"
-              class="card col-xl-2"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              style="width: 15rem"
-            >
-              <img src="/album1/ab16.webp" alt="images" />
-              <a href="#">
-                <i
-                  class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
-                ></i
-              ></a>
-
-              <div class="card-body text-start">
-                <div
-                  class="d-flex justify-content-between position-relative border-bottom"
-                >
-                  <div>
-                    <div class="card-title"><strong>Fast Car</strong></div>
-                    <div class="card-text position-absolute bottom-0 start-0">
-                      Luke Combs
-                    </div>
-                  </div>
-                  <div>
-                    <div class="text-end">
-                      <p class="m-1">$3.59</p>
-                    </div>
-                    <div class="text-end">
-                      <i class="fa-solid fa-cart-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  class="d-flex justify-content-between mt-2 align-items-center"
-                >
-                  <div class="review">
-                    <i class="fa-solid fa-star">4.99 &nbsp</i>
-                    <a href="review.html"><ins>review</ins></a>
-                  </div>
-
-                  <p class="m-0">Sold 4.9k</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="justify-content-start text-center mt-3 pb-5">
-            <a href="subscribe.html" class="btn btn-outline-dark"
-              >Load More<i class="fa-solid fa-angles-right"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- song -->
-    <section id="song">
-      <div class="container">
-        <!-- start -->
-        <div class="row align-items-center mt-5 justify-content-center">
-          <div class="col-xl-5 col-md-12 m-5" style="width: auto">
-            <a href="/album1/ab9.jpg" data-lightbox="image">
-              <img
-                href="/album1/ab9.jpg"
-                data-lightbox="image"
-                src="/album1/ab9.jpg"
-                data-aos="fade-right"
+              <p class="lead" data-aos="zoom-in-up" data-aos-duration="3000">
+                Where Music Comes to Life. Immerse Yourself in Soundscapes: Your
+                Musical Journey Awaits. Dive into the Melodic Ocean: Find Your
+                Perfect Tune.
+              </p>
+              <a
+                href="#album"
+                type="button"
+                class="btn btn-outline-light"
+                data-aos="zoom-in-up"
                 data-aos-duration="3000"
-                width="430"
-                alt="image"
-              />
-            </a>
-          </div>
-          <div
-            class="col-xl-5 col-md-12 text-start text-md-white"
-            data-aos="fade-left"
-            data-aos-duration="2000"
-          >
-            <h2><strong>T O P &nbsp H I T S</strong></h2>
-            <h6><strong>The Weeknd</strong></h6>
-            <p>Starboy</p>
-            <p class="lead">
-              As the radiant sun slowly descended below the distant, rolling
-              hills, casting a breathtaking palette of warm, golden hues across
-              the tranquil forest that stretched endlessly into the horizon, a
-              magnificent symphony of nature's awe-inspiring wonders began to
-              unfold: high above.
-            </p>
-            <div class="p-2 bg-dark rounded-1">
-              <p class="text-light lead">Starboy</p>
-
-              <audio
-                controls
-                src="/audio/Starboy.mp3 "
-                style="width: 100%"
-                loop
-              ></audio>
+              >
+                Discover<i class="fa-solid fa-angles-right"></i>
+              </a>
             </div>
+            <div class="col-xl-3"></div>
           </div>
         </div>
-        <!-- end -->.
-        <div class="row align-items-center mt-2 justify-content-center">
-          <!-- <div class="col-xl-5 col-md-12 m-5" style="width: auto"></div> -->
-          <div
-            class="col-xl-5 col-md-12 text-start text-md-white"
-            data-aos="fade-right"
-            data-aos-duration="2000"
-          >
-            <h2><strong>L A T E S T &nbsp H I T S</strong></h2>
-            <h6><strong>LOLA AMOUR</strong></h6>
-            <p>Raining In Manila</p>
-            <p class="lead">
-              As the radiant sun slowly descended below the distant, rolling
-              hills, casting a breathtaking palette of warm, golden hues across
-              the tranquil forest that stretched endlessly into the horizon, a
-              magnificent symphony of nature's awe-inspiring wonders began to
-              unfold: high above.
-            </p>
-            <div class="p-2 bg-dark rounded-1">
-              <p class="text-light lead">Raining In Manila</p>
-
-              <audio
-                style="width: 100%"
-                controls
-                src="/audio/Lola Amour - Raining in Manila (Official Lyric Video).mp3"
-                loop
-              ></audio>
+      </section>
+      <!-- show-case-end -->
+      <!-- New Album -->
+      <div id="album">
+        <section class="album bg-black text-light pb-5">
+          <div id="new-album" class="container">
+            <div class="row">
+              <div class="col-xl-3"></div>
+              <div id="middle" class="text-center mt-5 col-xl-6">
+                <p data-aos="fade-down" data-aos-duration="3000">
+                  See whar's new
+                </p>
+                <h2 class="mt-4" data-aos="fade-down" data-aos-duration="3000">
+                  L A T E S T &nbsp &nbsp A L B U M S
+                </h2>
+                <p class="mt-5" data-aos="zoom-in" data-aos-duration="2000">
+                  Curious to know what's hitting the airwaves lately? Dive into
+                  our 'See What's New' section and stay in the loop with the
+                  latest album releases from your favorite artists. From
+                  chart-topping hits to hidden gems, we've got your musical
+                  cravings covered. Discover the freshest sounds and keep your
+                  playlist up-to-date with our regularly updated collection of
+                  the hottest releases in the music industry.
+                </p>
+                <button
+                  class="btn btn-outline-light"
+                  data-aos="zoom-in"
+                  data-aos-duration="3000"
+                  onclick="document.getElementById('subscribe').style.display='block'"
+                  style="width: auto"
+                >
+                  Login
+                </button>
+              </div>
+              <div class="col-xl-3"></div>
             </div>
-          </div>
-          <div class="col-xl-5 col-md-12 m-5" style="width: auto">
-            <img
-              src="/img/hero-img/rain.webp"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              width="430"
-              alt="image"
-            />
-          </div>
-        </div>
-        <!-- end -->
-      </div>
-    </section>
-    <!-- weeeks top -->
-    <section class="bg-white">
-      <div id="artist">
-        <div class="container">
-          <div class="row justify-content-center">
-            <!-- ########## 1st #########-->
-            <div
-              class="col-xl-3 bg-white text-dark artist col-md-6"
-              data-aos="fade-down-right"
-              data-aos-duration="3000"
-            >
-              <div class="p-3 mt-4 mb-4">
-                <p>See what's new</p>
-                <h5>
-                  <strong>T O P &nbsp A R T I S T</strong>
-                </h5>
-                <div id="topic" class="mt-5 border-bottom pb-1">
-                  <div class="d-flex">
-                    <img
-                      class="rounded-circle"
-                      src="/album1/artist/aa1.webp"
-                      width="80"
-                      alt="img"
-                    />
-                    <div class="ps-4">
-                      <h6 class="">
-                        <strong>Taylor Swift</strong>
-                      </h6>
-                      <h8>Pop country folk rock alternative</h8>
+
+            <!-- Swiper -->
+
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card" style="width: 15rem">
+                    <a
+                      href="/album1/ab1.png"
+                      data-lightbox="image"
+                      data-title="Zach Bryan is the eponymous fourth studio album by American singer-songwriter Zach Bryan. It was released on August 25, 2023, through Belting Bronco and Warner. Entirely self-produced, it features guest appearances by the War and Treaty, Sierra Ferrell, Kacey Musgraves and the Lumineers. The album debuted atop the US Billboard 200 with the biggest streaming week for a rock album. Its lead single "
+                    >
+                      <img src="/album1/ab1.png" alt="images" />
+                    </a>
+                    <div class="card-body text-center">
+                      <div class="card-title"><strong>Zach Bryan</strong></div>
+                      <div class="card-text">Zach Bryan</div>
                     </div>
                   </div>
                 </div>
-                <div id="topic" class="mt-3 border-bottom pb-1">
-                  <div class="d-flex">
-                    <img
-                      class="rounded-circle"
-                      src="/album1/artist/aa2.jpg"
-                      width="80"
-                      alt="img"
-                    />
-                    <div class="ps-4">
-                      <h6><strong>Zach Bryan</strong></h6>
-                      <h8>Country alt-country honky-tonk</h8>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 15rem">
+                    <a
+                      href="/album1/ab3.jpg"
+                      data-lightbox="image"
+                      data-title="Utopia (stylized in all caps) is the fourth studio album by American rapper Travis Scott. It was released through Cactus Jack and Epic Records on July 28, 2023. The album features guest appearances from Teezo Touchdown, Drake, Playboi Carti, Beyoncé, Rob49, 21 Savage, the Weeknd, Swae Lee, Yung Lean, Dave Chappelle, Young Thug, Westside Gunn, Kid Cudi, Bad Bunny, SZA, Future, and James Blake. "
+                    >
+                      <img src="/album1/ab3.jpg" alt="images" />
+                    </a>
+                    <div class="card-body text-center">
+                      <div class="card-title"><strong>Utopia</strong></div>
+                      <div class="card-text">Travis Scott</div>
                     </div>
                   </div>
                 </div>
-                <div id="topic" class="mt-3 border-bottom pb-1">
-                  <div class="d-flex">
-                    <img
-                      class="rounded-circle"
-                      src="/album1/artist/aa3.jpg"
-                      width="80"
-                      alt="img"
-                    />
-                    <div class="ps-4">
-                      <h6><strong>Morgan Wallen</strong></h6>
-                      <h8>Country pop country bro-country</h8>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 15rem">
+                    <a
+                      href="/album1/ab4.jpg"
+                      data-lightbox="image"
+                      data-title="SOS is the second studio album by American singer-songwriter SZA. It was released through Top Dawg Entertainment and RCA Records on December 9, 2022.[1] The album features guest appearances from Don Toliver, Phoebe Bridgers, Travis Scott, and the late Ol' Dirty Bastard.[2] SZA worked with a variety of record producers and songwriters such as Babyface, Jeff Bhasker, Benny Blanco, Rodney Jerkins, DJ Dahi, Ant Clemons and Lizzo.[3] It serves as the follow-up to SZA's previous album Ctrl (2017)."
+                    >
+                      <img src="/album1/ab4.jpg" alt="images" />
+                    </a>
+                    <div class="card-body text-center">
+                      <div class="card-title"><strong>SOS</strong></div>
+                      <div class="card-text">SZA</div>
                     </div>
                   </div>
                 </div>
-                <div id="topic" class="mt-3 border-bottom pb-1">
-                  <div class="d-flex">
-                    <img
-                      class="rounded-circle"
-                      src="/album1/artist/aa4.jpg"
-                      width="80"
-                      alt="img"
-                    />
-                    <div class="ps-4">
-                      <h6><strong>Travis Scott</strong></h6>
-                      <h8>Rap psychedelic alternative hip hop</h8>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 15rem">
+                    <a
+                      href="/album1/ab5.avif"
+                      data-lightbox="image"
+                      data-title="Lover is the seventh studio album by American singer-songwriter Taylor Swift. It was released on August 23, 2019 through Republic Records, and is her first album after her departure from Big Machine Records, which resulted in a highly publicized dispute. Swift recorded Lover with producers Jack Antonoff, Joel Little, Louis Bell, and Frank Dukes from November 2018 to February 2019 following her Reputation Stadium Tour (2018) where she felt motivated by the fans, helping her recover her mental health after the controversies leading up to Reputation (2017)."
+                    >
+                      <img src="/album1/ab5.avif" alt="images" />
+                    </a>
+                    <div class="card-body text-center">
+                      <div class="card-title"><strong>LOVER</strong></div>
+                      <div class="card-text">Taylor Swift</div>
                     </div>
                   </div>
                 </div>
-                <div id="topic" class="mt-3 border-bottom pb-1">
-                  <div class="d-flex">
-                    <img
-                      class="rounded-circle"
-                      src="/album1/artist/aa5.jpg"
-                      width="80"
-                      alt="img"
-                    />
-                    <div class="ps-4">
-                      <h6><strong>SZA</strong></h6>
-                      <h8>R&B pop hip hop</h8>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 15rem">
+                    <a
+                      href="/album1/ab6.jpg"
+                      data-lightbox="image"
+                      data-title="American Heartbreak is the third studio album by American singer-songwriter Zach Bryan, released on May 20, 2022, through Belting Bronco and Warner Records. It is a triple album and Bryan's major-label debut.[1] The album was preceded by six singles, including Bryan's most successful single to date, Something in the Orange, which reached number 10 on the US Billboard Hot 100.[2] Bryan toured the US until November 2022 in support of the record."
+                    >
+                      <img src="/album1/ab6.jpg" alt="images" />
+                    </a>
+                    <div class="card-body text-center">
+                      <div class="card-title">
+                        <strong>American Heartbreak</strong>
+                      </div>
+                      <div class="card-text">Zach Bryan</div>
                     </div>
                   </div>
                 </div>
-                <div id="topic" class="mt-3 border-bottom pb-1">
-                  <div class="d-flex">
-                    <img
-                      class="rounded-circle"
-                      src="/album1/artist/aa6.jpg"
-                      width="80"
-                      alt="img"
-                    />
-                    <div class="ps-4">
-                      <h6><strong>Drake</strong></h6>
-                      <h8>Hip hop R&B pop rap pop trap</h8>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 15rem">
+                    <a
+                      href="/album1/ab7.jpg"
+                      data-lightbox="image"
+                      data-title="Austin Richard Post (born July 4, 1995),[1] known professionally as Post Malone, is an American rapper, singer, songwriter, and record producer.[2] Known for his variegated vocals, Malone has gained acclaim for blending genres and subgenres of hip hop, pop, R&B, and trap. His stage name was derived from inputting his birth name into a rap name generator."
+                    >
+                      <img src="/album1/ab7.jpg" alt="images" />
+                    </a>
+                    <div class="card-body text-center">
+                      <div class="card-title"><strong>Austin</strong></div>
+                      <div class="card-text">Post Malone</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 15rem">
+                    <a
+                      href="/album1/ab8.webp"
+                      data-lightbox="image"
+                      data-title="Sour (stylized in all caps) is the debut studio album by American singer-songwriter Olivia Rodrigo. It was released on May 21, 2021, by Geffen Records. The album was written by Rodrigo and producer Dan Nigro. Originally planned as an EP, Sour was expanded into a full-length album following the viral success of her debut single, Drivers License."
+                    >
+                      <img src="/album1/ab8.webp" alt="images" />
+                    </a>
+                    <div class="card-body text-center">
+                      <div class="card-title"><strong>Sour</strong></div>
+                      <div class="card-text">Olivia Rodrigo</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 15rem">
+                    <a
+                      href="/album1/ab9.jpg"
+                      data-lightbox="image"
+                      data-title="Starboy is the third studio album by Canadian singer the Weeknd, released on November 25, 2016, through XO and Republic Records. It features guest appearances from Daft Punk, Lana Del Rey, Kendrick Lamar, and Future. As the album's executive producers, the Weeknd and Doc McKinney enlisted a variety of producers such as Diplo, Cashmere Cat, Metro Boomin, Frank Dukes, and Labrinth, among others."
+                    >
+                      <img src="/album1/ab9.jpg" alt="images" />
+                    </a>
+                    <div class="card-body text-center">
+                      <div class="card-title"><strong>Starboy</strong></div>
+                      <div class="card-text">The Weeknd</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card" style="width: 15rem">
+                    <a
+                      href="/album1/ab2.webp"
+                      data-lightbox="image"
+                      data-title="Midnights is the tenth studio album by American singer-songwriter Taylor Swift, released on October 21, 2022, via Republic Records. Announced at the 2022 MTV Video Music Awards, Midnights marked Swift's first new body of work since her 2020 indie folk albums, Folklore and Evermore. It is a moody concept album about nocturnal ruminations, written and produced by Swift with longtime collaborator Jack Antonoff."
+                    >
+                      <img src="/album1/ab2.webp" alt="images" />
+                    </a>
+                    <div class="card-body text-center">
+                      <div class="card-title"><strong>Midnights</strong></div>
+                      <div class="card-text">Taylor Swift</div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="swiper-pagination"></div>
             </div>
-            <!--####### 2nd ########3-->
-            <div
-              class="col-xl-3 bg-light border border-opacity-75 text-dark artist col-md-6"
-              data-aos="fade-up"
-              data-aos-duration="3000"
-            >
-              <div class="p-3 mt-4 mb-4">
-                <p>See what's new</p>
-                <h5>
-                  <strong
-                    >N &nbsp E &nbsp W &nbsp &nbsp H&nbspI &nbspT &nbspS</strong
-                  >
-                </h5>
-                <div class="mt-5 border-bottom pb-1">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img
-                          src="/img/hero-img/weeksnew/a4.jpg"
-                          width="80"
-                          alt="img"
-                        />
-                        <div class="ps-4">
-                          <h6><strong>SAM SMITH</strong></h6>
-                          <h8>Underground</h8>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-column text-center">
-                      <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
-                      </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
-                    </div>
-                  </div>
+          </div>
+        </section>
+        <!-- For Sale -->
+        <section>
+          <div id="bg-mid" class="bg-light text-dark">
+            <div id="sale" class="container container-fluid">
+              <div class="row">
+                <div class="col-xl-3"></div>
+                <div
+                  id="middle"
+                  class="text-center mt-5 col-xl-6"
+                  data-aos="fade-down"
+                  data-aos-duration="3000"
+                >
+                  <p>See whar's new</p>
+                  <h2 class="mt-4">B U Y &nbsp W H A T ' S&nbsp N E W</h2>
                 </div>
-                <div class="mt-3 border-bottom pb-1">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img
-                          src="/img/hero-img/weeksnew/a3.jpg"
-                          width="80"
-                          alt="img"
-                        />
-                        <div class="ps-4">
-                          <h6><strong>SAM SMITH</strong></h6>
-                          <h8>Underground</h8>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-column text-center">
-                      <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
-                      </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-3 border-bottom pb-1">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img
-                          src="/img/hero-img/weeksnew/a2.jpg"
-                          width="80"
-                          alt="img"
-                        />
-                        <div class="ps-4">
-                          <h6><strong>SAM SMITH</strong></h6>
-                          <h8>Underground</h8>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-column text-center">
-                      <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
-                      </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-3 border-bottom pb-1">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img
-                          src="/img/hero-img/weeksnew/a1.jpg"
-                          width="80"
-                          alt="img"
-                        />
-                        <div class="ps-4">
-                          <h6><strong>SAM SMITH</strong></h6>
-                          <h8>Underground</h8>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-column text-center">
-                      <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
-                      </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-3 border-bottom pb-1">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img
-                          src="/img/hero-img/weeksnew/s2.jpg"
-                          width="80"
-                          alt="img"
-                        />
-                        <div class="ps-4">
-                          <h6><strong>SAM SMITH</strong></h6>
-                          <h8>Underground</h8>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-column text-center">
-                      <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
-                      </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-3">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img
-                          src="/img/hero-img/weeksnew/s1.jpg"
-                          width="80"
-                          alt="img"
-                        />
-                        <div class="ps-4">
-                          <h6><strong>SAM SMITH</strong></h6>
-                          <h8>Underground</h8>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="d-flex flex-column text-center">
-                      <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
-                      </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
-                    </div>
-                  </div>
-                </div>
+                <div class="col-xl-3"></div>
               </div>
-            </div>
-            <!--$$$$$$$$$$$$ 3rd $$$$$$$$$-->
-            <div
-              class="col-xl-3 bg-light border border-opacity-75 text-dark artist col-m-6"
-              data-aos="fade-down-left"
-              data-aos-duration="3000"
-            >
-              <div class="p-3 mt-4 mb-4">
-                <p>See what's new</p>
-                <h5>
-                  <strong>T H I S &nbsp W E E K ' S &nbspT O P</strong>
-                </h5>
+              <!-- pictures -->
+              <div id="pic-album" class="g-4 justify-content-center pt-5 row">
+                <!-- swiper -->
 
                 <!-- start -->
-                <div class="mt-5 border-bottom pb-1">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img src="/album1/ab1.png" width="80" alt="img" />
-                        <div class="ps-4">
-                          <h6><strong>Zach Bryan</strong></h6>
-                          <h8>Dawns </h8>
-                        </div>
-                      </div>
-                    </div>
 
-                    <div class="d-flex flex-column text-center">
-                      <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
-                      </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-3 border-bottom pb-1">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img src="/album1/ab2.webp" width="80" alt="img" />
-                        <div class="ps-4">
-                          <h6><strong>Taylor Swift </strong></h6>
-                          <h8>Midnights</h8>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="d-flex flex-column text-center">
-                      <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
-                      </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-3 border-bottom pb-1">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img src="/album1/ab3.jpg" width="80" alt="img" />
-                        <div class="ps-4">
-                          <h6><strong>Travis Scott</strong></h6>
-                          <h8>goosebumps</h8>
-                        </div>
-                      </div>
-                    </div>
+                <div
+                  id="tatic"
+                  class="card"
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab3.jpg" alt="images" />
 
-                    <div class="d-flex flex-column text-center">
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
                       <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
+                        <div class="card-title"><strong>Utopia</strong></div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Travis Scott
+                        </div>
                       </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="mt-3 border-bottom pb-1">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img src="/album1/ab4.jpg" width="80" alt="img" />
-                        <div class="ps-4">
-                          <h6><strong>SZA</strong></h6>
-                          <h8>SOS</h8>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$1.98</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
                         </div>
                       </div>
                     </div>
-
-                    <div class="d-flex flex-column text-center">
-                      <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.97 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
                       </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
+
+                      <p class="m-0">Sold 2.9k</p>
                     </div>
                   </div>
                 </div>
-                <div class="mt-3 border-bottom pb-1">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img src="/album1/ab5.avif" width="80" alt="img" />
-                        <div class="ps-4">
-                          <h6><strong>Taylor Swift</strong></h6>
-                          <h8>Lover</h8>
+                <!-- 2 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab9.jpg" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title"><strong>Starboy</strong></div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          The Weeknd
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$2.49</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
                         </div>
                       </div>
                     </div>
-
-                    <div class="d-flex flex-column text-center">
-                      <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.98 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
                       </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
+
+                      <p class="m-0">Sold 3.9k</p>
                     </div>
                   </div>
                 </div>
-                <div class="mt-3">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                  >
-                    <div>
-                      <div class="d-flex">
-                        <img src="/album1/ab6.jpg" width="80" alt="img" />
-                        <div class="ps-4">
-                          <h6><strong>Zach Bryan</strong></h6>
-                          <h8>American Heartbreak</h8>
+                <!-- 3 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab8.webp" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title"><strong>Sour</strong></div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Olivia Rodrigo
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$1.99</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
                         </div>
                       </div>
                     </div>
-
-                    <div class="d-flex flex-column text-center">
-                      <div>
-                        <a href="#"
-                          ><i
-                            class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
-                          ></i
-                        ></a>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.98 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
                       </div>
-                      <i class="fa-regular fa-heart mt-2"></i>
+
+                      <p class="m-0">Sold 2.9k</p>
                     </div>
                   </div>
                 </div>
-                <!-- end -->
+                <!-- 4 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab1.png" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title">
+                          <strong>Zach Bryan</strong>
+                        </div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Zach Bryan
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$2.49</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.95 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 2.5k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 5 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab4.jpg" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title"><strong>SOS</strong></div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          SZA
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$1.99</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.98 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 1.8k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 6 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab2.webp" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title"><strong>Midnights</strong></div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Taylor Smith
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$1.99</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.96 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 1.7k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 7 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab5.avif" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title"><strong>Lover</strong></div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Taylor Smith
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$1.89</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.98 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 2.9k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 8 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab6.jpg" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title">
+                          <strong>American Heartbreak</strong>
+                        </div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Zach Byan
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$2.49</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.98 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 3.5k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 9 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab7.jpg" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title"><strong>Austin</strong></div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Post Malone
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$3.99</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.99 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 5.9k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 10 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab10.webp" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title">
+                          <strong>Paint The Town Red</strong>
+                        </div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Doja Cat
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$1.99</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.94 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 1.9k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 11 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab11.webp" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title">
+                          <strong>Last Night</strong>
+                        </div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Morgan Wallen
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$2.49</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.98 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 2.9k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 12 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab12.jpg" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title"><strong>Snooze</strong></div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          SZA
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$2.49</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.98 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 2.6k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 13 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab13.png" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title">
+                          <strong>What Was I Made For?</strong>
+                        </div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Billie Eilish
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$2.99</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.99 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 4.9k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 14 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-right"
+                  data-aos-duration="2000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab14.webp" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title">
+                          <strong>Last Time I Saw You</strong>
+                        </div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Nicki Minaj
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$2.99</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.98 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 3.6k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 15 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-left"
+                  data-aos-duration="2000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab15.jpg" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title">
+                          <strong>Religiously</strong>
+                        </div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Bailey Zimmerman
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$3.99</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.99 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 5.9k</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- 16 -->
+                <div
+                  id="tatic"
+                  class="card col-xl-2"
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  style="width: 15rem"
+                >
+                  <img src="/album1/ab16.webp" alt="images" />
+                  <a href="#">
+                    <i
+                      class="fa-solid fa-play position-absolute top-50 start-50 translate-middle btn btn-outline-dark"
+                    ></i
+                  ></a>
+
+                  <div class="card-body text-start">
+                    <div
+                      class="d-flex justify-content-between position-relative border-bottom"
+                    >
+                      <div>
+                        <div class="card-title"><strong>Fast Car</strong></div>
+                        <div
+                          class="card-text position-absolute bottom-0 start-0"
+                        >
+                          Luke Combs
+                        </div>
+                      </div>
+                      <div>
+                        <div class="text-end">
+                          <p class="m-1">$3.59</p>
+                        </div>
+                        <div class="text-end">
+                          <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex justify-content-between mt-2 align-items-center"
+                    >
+                      <div class="review">
+                        <i class="fa-solid fa-star">4.99 &nbsp</i>
+                        <a href="review.html"><ins>review</ins></a>
+                      </div>
+
+                      <p class="m-0">Sold 4.9k</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="justify-content-start text-center mt-3 pb-5">
+                <a href="subscribe.html" class="btn btn-outline-dark"
+                  >Load More<i class="fa-solid fa-angles-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- song -->
+      <section id="song">
+        <div class="container">
+          <!-- start -->
+          <div class="row align-items-center mt-5 justify-content-center">
+            <div class="col-xl-5 col-md-12 m-5" style="width: auto">
+              <a
+                href="/album1/ab9.jpg"
+                data-lightbox="image-2"
+                data-title="Hip-Hop artist The Weeknd's new album, “Starboy,” envelops listeners in a paranoid venture into sex, drugs and insanity. The 18-track album highlights The Weeknd's raw voice and compelling style and reveals a new side of him, showing his vulnerability and insanity in multiple tracks."
+              >
+                <img
+                  href="/album1/ab9.jpg"
+                  data-lightbox="image"
+                  src="/album1/ab9.jpg"
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  width="430"
+                  alt="image"
+                />
+              </a>
+            </div>
+            <div
+              class="col-xl-5 col-md-12 text-start text-md-white"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
+              <h2><strong>T O P &nbsp H I T S</strong></h2>
+              <h6><strong>The Weeknd</strong></h6>
+              <p>Starboy</p>
+              <p class="lead">
+                As the radiant sun slowly descended below the distant, rolling
+                hills, casting a breathtaking palette of warm, golden hues
+                across the tranquil forest that stretched endlessly into the
+                horizon, a magnificent symphony of nature's awe-inspiring
+                wonders began to unfold: high above.
+              </p>
+              <div class="p-2 bg-dark rounded-1">
+                <p class="text-light lead">Starboy</p>
+
+                <audio
+                  controls
+                  src="/audio/Starboy.mp3 "
+                  style="width: 100%"
+                  loop
+                ></audio>
+              </div>
+            </div>
+          </div>
+          <!-- end -->.
+          <div class="row align-items-center mt-2 justify-content-center">
+            <!-- <div class="col-xl-5 col-md-12 m-5" style="width: auto"></div> -->
+            <div
+              class="col-xl-5 col-md-12 text-start text-md-white"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              <h2><strong>L A T E S T &nbsp H I T S</strong></h2>
+              <h6><strong>LOLA AMOUR</strong></h6>
+              <p>Raining In Manila</p>
+              <p class="lead">
+                As the radiant sun slowly descended below the distant, rolling
+                hills, casting a breathtaking palette of warm, golden hues
+                across the tranquil forest that stretched endlessly into the
+                horizon, a magnificent symphony of nature's awe-inspiring
+                wonders began to unfold: high above.
+              </p>
+              <div class="p-2 bg-dark rounded-1">
+                <p class="text-light lead">Raining In Manila</p>
+
+                <audio
+                  style="width: 100%"
+                  controls
+                  src="/audio/Lola Amour - Raining in Manila (Official Lyric Video).mp3"
+                  loop
+                ></audio>
+              </div>
+            </div>
+            <div class="col-xl-5 col-md-12 m-5" style="width: auto">
+              <a
+                href="/img/hero-img/rain.webp"
+                data-lightbox="image-2"
+                data-title="The song Raining In Manila by Lola Amour reveals a story of longing, heartbreak, and hope through the experiences of a person caught in the rain in the city of Manila. The song speaks of a person who is missing someone deeply, but cannot communicate with them due to the weather or distance."
+              >
+                <img
+                  src="/img/hero-img/rain.webp"
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  width="430"
+                  alt="image"
+                />
+              </a>
+            </div>
+          </div>
+          <!-- end -->
+        </div>
+      </section>
+      <!-- weeeks top -->
+      <section class="bg-white">
+        <div id="artist">
+          <div class="container">
+            <div class="row justify-content-center">
+              <!-- ########## 1st #########-->
+              <div
+                class="col-xl-3 bg-white text-dark artist col-md-6"
+                data-aos="fade-down-right"
+                data-aos-duration="3000"
+              >
+                <div class="p-3 mt-4 mb-4">
+                  <p>See what's new</p>
+                  <h5>
+                    <strong>T O P &nbsp A R T I S T</strong>
+                  </h5>
+                  <div id="topic" class="mt-5 border-bottom pb-1">
+                    <div class="d-flex">
+                      <img
+                        class="rounded-circle"
+                        src="/album1/artist/aa1.webp"
+                        width="80"
+                        alt="img"
+                      />
+                      <div class="ps-4">
+                        <h6 class="">
+                          <strong>Taylor Swift</strong>
+                        </h6>
+                        <h8>Pop country folk rock alternative</h8>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="topic" class="mt-3 border-bottom pb-1">
+                    <div class="d-flex">
+                      <img
+                        class="rounded-circle"
+                        src="/album1/artist/aa2.jpg"
+                        width="80"
+                        alt="img"
+                      />
+                      <div class="ps-4">
+                        <h6><strong>Zach Bryan</strong></h6>
+                        <h8>Country alt-country honky-tonk</h8>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="topic" class="mt-3 border-bottom pb-1">
+                    <div class="d-flex">
+                      <img
+                        class="rounded-circle"
+                        src="/album1/artist/aa3.jpg"
+                        width="80"
+                        alt="img"
+                      />
+                      <div class="ps-4">
+                        <h6><strong>Morgan Wallen</strong></h6>
+                        <h8>Country pop country bro-country</h8>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="topic" class="mt-3 border-bottom pb-1">
+                    <div class="d-flex">
+                      <img
+                        class="rounded-circle"
+                        src="/album1/artist/aa4.jpg"
+                        width="80"
+                        alt="img"
+                      />
+                      <div class="ps-4">
+                        <h6><strong>Travis Scott</strong></h6>
+                        <h8>Rap psychedelic alternative hip hop</h8>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="topic" class="mt-3 border-bottom pb-1">
+                    <div class="d-flex">
+                      <img
+                        class="rounded-circle"
+                        src="/album1/artist/aa5.jpg"
+                        width="80"
+                        alt="img"
+                      />
+                      <div class="ps-4">
+                        <h6><strong>SZA</strong></h6>
+                        <h8>R&B pop hip hop</h8>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="topic" class="mt-3 border-bottom pb-1">
+                    <div class="d-flex">
+                      <img
+                        class="rounded-circle"
+                        src="/album1/artist/aa6.jpg"
+                        width="80"
+                        alt="img"
+                      />
+                      <div class="ps-4">
+                        <h6><strong>Drake</strong></h6>
+                        <h8>Hip hop R&B pop rap pop trap</h8>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--####### 2nd ########3-->
+              <div
+                class="col-xl-3 bg-light border border-opacity-75 text-dark artist col-md-6"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <div class="p-3 mt-4 mb-4">
+                  <p>See what's new</p>
+                  <h5>
+                    <strong
+                      >N &nbsp E &nbsp W &nbsp &nbsp H&nbspI &nbspT
+                      &nbspS</strong
+                    >
+                  </h5>
+                  <div class="mt-5 border-bottom pb-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img
+                            src="/img/hero-img/weeksnew/a4.jpg"
+                            width="80"
+                            alt="img"
+                          />
+                          <div class="ps-4">
+                            <h6><strong>SAM SMITH</strong></h6>
+                            <h8>Underground</h8>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 border-bottom pb-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img
+                            src="/img/hero-img/weeksnew/a3.jpg"
+                            width="80"
+                            alt="img"
+                          />
+                          <div class="ps-4">
+                            <h6><strong>SAM SMITH</strong></h6>
+                            <h8>Underground</h8>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 border-bottom pb-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img
+                            src="/img/hero-img/weeksnew/a2.jpg"
+                            width="80"
+                            alt="img"
+                          />
+                          <div class="ps-4">
+                            <h6><strong>SAM SMITH</strong></h6>
+                            <h8>Underground</h8>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 border-bottom pb-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img
+                            src="/img/hero-img/weeksnew/a1.jpg"
+                            width="80"
+                            alt="img"
+                          />
+                          <div class="ps-4">
+                            <h6><strong>SAM SMITH</strong></h6>
+                            <h8>Underground</h8>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 border-bottom pb-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img
+                            src="/img/hero-img/weeksnew/s2.jpg"
+                            width="80"
+                            alt="img"
+                          />
+                          <div class="ps-4">
+                            <h6><strong>SAM SMITH</strong></h6>
+                            <h8>Underground</h8>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img
+                            src="/img/hero-img/weeksnew/s1.jpg"
+                            width="80"
+                            alt="img"
+                          />
+                          <div class="ps-4">
+                            <h6><strong>SAM SMITH</strong></h6>
+                            <h8>Underground</h8>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--$$$$$$$$$$$$ 3rd $$$$$$$$$-->
+              <div
+                class="col-xl-3 bg-light border border-opacity-75 text-dark artist col-m-6"
+                data-aos="fade-down-left"
+                data-aos-duration="3000"
+              >
+                <div class="p-3 mt-4 mb-4">
+                  <p>See what's new</p>
+                  <h5>
+                    <strong>T H I S &nbsp W E E K ' S &nbspT O P</strong>
+                  </h5>
+
+                  <!-- start -->
+                  <div class="mt-5 border-bottom pb-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img src="/album1/ab1.png" width="80" alt="img" />
+                          <div class="ps-4">
+                            <h6><strong>Zach Bryan</strong></h6>
+                            <h8>Dawns </h8>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 border-bottom pb-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img src="/album1/ab2.webp" width="80" alt="img" />
+                          <div class="ps-4">
+                            <h6><strong>Taylor Swift </strong></h6>
+                            <h8>Midnights</h8>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 border-bottom pb-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img src="/album1/ab3.jpg" width="80" alt="img" />
+                          <div class="ps-4">
+                            <h6><strong>Travis Scott</strong></h6>
+                            <h8>goosebumps</h8>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 border-bottom pb-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img src="/album1/ab4.jpg" width="80" alt="img" />
+                          <div class="ps-4">
+                            <h6><strong>SZA</strong></h6>
+                            <h8>SOS</h8>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3 border-bottom pb-1">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img src="/album1/ab5.avif" width="80" alt="img" />
+                          <div class="ps-4">
+                            <h6><strong>Taylor Swift</strong></h6>
+                            <h8>Lover</h8>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mt-3">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <div>
+                        <div class="d-flex">
+                          <img src="/album1/ab6.jpg" width="80" alt="img" />
+                          <div class="ps-4">
+                            <h6><strong>Zach Bryan</strong></h6>
+                            <h8>American Heartbreak</h8>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="d-flex flex-column text-center">
+                        <div>
+                          <a href="#"
+                            ><i
+                              class="fa-solid fa-play btn btn-outline-dark rounded-circle mb-2"
+                            ></i
+                          ></a>
+                        </div>
+                        <i class="fa-regular fa-heart mt-2"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end -->
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- subscribe now -->
-    <section>
-      <div id="contact" class="foot-bg">
-        <div id="wagpo" class="container text-center pt-5 pb-5">
-          <h3 class="mt-3"><strong>G E T &nbsp IN &nbsp T O U C H</strong></h3>
+      <!-- subscribe now -->
+      <section>
+        <div id="contact" class="foot-bg">
+          <div id="wagpo" class="container text-center pt-5 pb-5">
+            <h3 class="mt-3">
+              <strong>G E T &nbsp IN &nbsp T O U C H</strong>
+            </h3>
 
-          <!-- form -->
-          <form action="process.php" class="text-center mt-5">
-            <div class="d-flex justify-content-center">
-              <div class="first m-2 text-start">
-                <label for="name">Name:</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Enter your name"
-                />
+            <!-- form -->
+            <form action="process.php" class="text-center mt-5">
+              <div class="d-flex justify-content-center">
+                <div class="first m-2 text-start">
+                  <label for="name">Name:</label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Enter your name"
+                  />
+                </div>
+                <div class="second m-2 text-start">
+                  <label for="email">Email:</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter your e-mail"
+                  />
+                </div>
               </div>
-              <div class="second m-2 text-start">
-                <label for="email">Email:</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter your e-mail"
-                />
+              <div class="d-flex justify-content-between p-5">
+                <div id="fourth" class="m-2 text-start">
+                  <label for="password">Password:</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Enter your password"
+                  />
+                </div>
+                <div id="fifth" class="m-2 text-start">
+                  <label for="subject">Subject:</label>
+                  <input type="text" name="subject" id="subjext" />
+                </div>
               </div>
-            </div>
-            <div class="d-flex justify-content-between p-5">
-              <div id="fourth" class="m-2 text-start">
-                <label for="password">Password:</label>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Enter your password"
-                />
+              <div id="sixth">
+                <label class="pb-2" for="message">Message:</label>
+                <textarea
+                  name="message"
+                  id="messge"
+                  cols="10"
+                  rows="5"
+                  placeholder="Enter your message"
+                ></textarea>
               </div>
-              <div id="fifth" class="m-2 text-start">
-                <label for="subject">Subject:</label>
-                <input type="text" name="subject" id="subjext" />
-              </div>
-            </div>
-            <div id="sixth">
-              <label class="pb-2" for="message">Message:</label>
-              <textarea
-                name="message"
-                id="messge"
-                cols="10"
-                rows="5"
-                placeholder="Enter your message"
-              ></textarea>
-            </div>
-          </form>
-          <a href="#" class="btn btn-outline-light">Submit</a>
+            </form>
+            <a href="#" class="btn btn-outline-light">Submit</a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
     <!-- footer -->
     <footer class="bg-dark">
       <div class="container">
