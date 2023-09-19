@@ -536,7 +536,7 @@ span.psw {
   }
 }
 /*------------------------------------------------- navbar */
-@media (max-width: 577px) {
+/* @media (max-width: 577px) {
   #navbar {
     max-width: 577px;
   }
@@ -678,7 +678,13 @@ span.psw {
     max-width: 300px;
     margin: auto;
   }
+} */
+@media (max-width: 585px) {
+  .img-star {
+    width: 350px;
+  }
 }
+
 .hero-title {
   width: auto;
 }
