@@ -539,80 +539,143 @@ span.psw {
   #navbar {
     max-width: 577px;
   }
+  body {
+    max-width: 577px;
+    margin: auto;
+  }
 }
 @media (max-width: 560px) {
   #navbar {
     max-width: 560px;
+  }
+  body {
+    max-width: 560px;
+    margin: auto;
   }
 }
 @media (max-width: 545px) {
   #navbar {
     max-width: 545px;
   }
+  body {
+    max-width: 545px;
+    margin: auto;
+  }
 }
 @media (max-width: 530px) {
   #navbar {
     max-width: 530px;
+  }
+  body {
+    max-width: 530px;
+    margin: auto;
   }
 }
 @media (max-width: 515px) {
   #navbar {
     max-width: 515px;
   }
+  body {
+    max-width: 515px;
+    margin: auto;
+  }
 }
 @media (max-width: 500px) {
   #navbar {
     max-width: 500px;
+  }
+  body {
+    max-width: 500px;
+    margin: auto;
   }
 }
 @media (max-width: 485px) {
   #navbar {
     max-width: 485px;
   }
+  body {
+    max-width: 485px;
+    margin: auto;
+  }
 }
 @media (max-width: 465px) {
   #navbar {
     max-width: 465px;
+  }
+  body {
+    max-width: 465px;
+    margin: auto;
   }
 }
 @media (max-width: 450px) {
   #navbar {
     max-width: 450px;
   }
+  body {
+    max-width: 450px;
+    margin: auto;
+  }
 }
 @media (max-width: 430px) {
   #navbar {
     max-width: 430px;
   }
-}
-@media (max-width: 415px) {
-  #navbar {
-    max-width: 415px;
+  body {
+    max-width: 430px;
+    margin: auto;
   }
 }
 @media (max-width: 415px) {
   #navbar {
     max-width: 415px;
+  }
+  body {
+    max-width: 415px;
+    margin: auto;
+  }
+}
+@media (max-width: 415px) {
+  #navbar {
+    max-width: 415px;
+  }
+  body {
+    max-width: 415px;
+    margin: auto;
   }
 }
 @media (max-width: 400px) {
   #navbar {
     max-width: 400px;
   }
+  body {
+    max-width: 400px;
+    margin: auto;
+  }
 }
 @media (max-width: 385px) {
   #navbar {
     max-width: 385px;
+  }
+  body {
+    max-width: 385px;
+    margin: auto;
   }
 }
 @media (max-width: 360px) {
   #navbar {
     max-width: 360px;
   }
+  #body {
+    max-width: 360px;
+  }
 }
 @media (max-width: 300px) {
   #navbar {
     max-width: 300px;
+  }
+  body {
+    max-width: 300px;
+    margin: auto;
   }
 }
 .hero-title {
