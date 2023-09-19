@@ -200,7 +200,7 @@ form .fifth input,
   border: none;
   outline: none;
   border: rgba(255, 255, 255, 0.2);
-  border-bottom: 2px solid #333;
+  border-bottom: 2px solid #646363;
   font-size: 1rem;
   color: #fff;
 }
@@ -233,7 +233,7 @@ form #fifth input {
   height: 50px;
 }
 #wagpo {
-  max-width: 900px;
+  max-width: 1400px;
 }
 #icon-2 {
   color: #fff;
@@ -740,8 +740,9 @@ span.psw {
 .padding-banner {
   padding: 0 5rem;
 }
-.padding-banner .img-banner {
-  padding: 0 5rem;
+.padding-banner .img-banner-2 {
+  margin: auto;
+  width: 600px;
   color: #fff;
 }
 .padding-banner .img-banner h2 {
@@ -786,4 +787,7 @@ span.psw {
 .aside-1,
 .aside-2 {
   width: 86%;
+}
+form .second {
+  padding: 1rem;
 }

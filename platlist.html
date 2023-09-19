@@ -41,7 +41,11 @@
     />
     <title>Lister</title>
   </head>
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    data-bs-smooth-scroll="true"
+  >
     <!-- navbar start -->
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
       <div class="container">
@@ -71,11 +75,10 @@
               <a class="nav-link h-current" href="platlist.html">Playlist </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="event.html">Event</a>
-            </li>
-
-            <li class="nav-item">
               <a class="nav-link" href="#contact">Contact us </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="event.html">Event</a>
             </li>
           </ul>
 
@@ -422,10 +425,8 @@
       class="mt-3 pt-3 align-items-center justify-content-center"
     >
       <div class="container padding-banner">
-        <div
-          class="img-banner align-items-center text-center d-flex justify-content-between"
-        >
-          <div>
+        <div class="img-banner d-flex align-items-center">
+          <div class="img-banner-2 text-center">
             <h2><strong>L e t 's &nbsp T u n e &nbsp i n !</strong></h2>
             <p class="align-self-center">
               Get ready to groove and move as we play the music, turning on the
@@ -440,7 +441,6 @@
               our own catchy tune.
             </p>
           </div>
-          <div></div>
         </div>
       </div>
     </section>
@@ -583,60 +583,272 @@
       </div>
     </section>
     <!-- subscribe now -->
-    <section>
+    <!-- subscribe now -->
+    <section id="review">
       <div id="contact" class="foot-bg">
-        <div id="wagpo" class="container text-center pt-5 pb-5">
-          <h3 class="mt-3"><strong>G E T &nbsp IN &nbsp T O U C H</strong></h3>
+        <div
+          id="wagpo"
+          class="container text-center pt-5 pb-5 justify-content-center"
+        >
+          <h3 class="mt-3">
+            <strong>G E T &nbsp IN &nbsp T O U C H</strong>
+          </h3>
 
           <!-- form -->
-          <form action="process.php" class="text-center mt-5">
-            <div class="d-flex justify-content-center">
-              <div class="first m-2 text-start">
-                <label for="name">Name:</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Enter your name"
-                />
+
+          <div class="row ms-3 mt-5">
+            <div class="col-xl-6 bg-black bg-transparent rounded border">
+              <div class="row">
+                <div class="col-xl-6">
+                  <form action="process.php" class="text-start">
+                    <div class="first">
+                      <label for="name">Name:</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Enter your name"
+                      />
+                    </div>
+                    <div class="second mt-4 text-start ps-0">
+                      <label for="name">Password:</label>
+                      <input
+                        class="form-control"
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Enter your password"
+                      />
+                    </div>
+                  </form>
+                </div>
+                <div class="col-xl-6 text end">
+                  <form action="process.php" class="text-start">
+                    <div class="fourth">
+                      <label class="mb-2" for="email">E-mail:</label>
+                      <input
+                        class="form-control pt-3"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Enter your email"
+                      />
+                    </div>
+                    <div class="fifth mt-5">
+                      <label for="subject">Subject:</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="subject"
+                        id="subject"
+                        placeholder="Enter your subject"
+                      />
+                    </div>
+                  </form>
+                </div>
               </div>
-              <div class="second m-2 text-start">
-                <label for="email">Email:</label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  placeholder="Enter your e-mail"
-                />
+              <form action="process.php " class="sixth mt-3">
+                <label class="text-start" for="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Enter your message"
+                ></textarea>
+              </form>
+              <div class="pb-3">
+                <a href="#" class="btn btn-outline-light mt-3">Submit</a>
               </div>
             </div>
-            <div class="d-flex justify-content-between p-5">
-              <div id="fourth" class="m-2 text-start">
-                <label for="password">Password:</label>
-                <input
-                  type="password"
-                  name="password"
-                  id="password"
-                  placeholder="Enter your password"
-                />
+            <div class="col-xl-6">
+              <!--------------------------- ssss ------------------->
+              <div
+                id="carouselExampleAutoplaying"
+                class="carousel slide justify-content-center d-flex border"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner rounded">
+                  <div class="carousel-item active">
+                    <div class="ps-3 pe-3 pt-3 pb-3">
+                      <div class="d-flex">
+                        <div class="d-flex">
+                          <img
+                            class="rounded-circle"
+                            src="/album1/artist/aa1.webp"
+                            width="130px"
+                            alt="img"
+                          />
+                          <div class="pt-3">
+                            <p class="ps-2 text-start">
+                              <strong>Travis Scott</strong>
+                            </p>
+                            <div class="text-start ps-2 pt-3 text-warning">
+                              <i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="ps-2 pt-1 text-light">
+                              <p>september 18, 2021</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p
+                          class="pt-3 ms-5 text-start text-light"
+                          style="width: 300px"
+                        >
+                          We enjoyed our whole stay at Batalang Bato Beach
+                          Retreat. Xiutin was responsive and the staff were
+                          friendly and accommodating. If you want a private and
+                          peaceful place, this is the best place to stay.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="ps-3 pe-3 pt-3 pb-3">
+                      <div class="d-flex">
+                        <div class="d-flex">
+                          <img
+                            class="rounded-circle"
+                            src="/album1/artist/aa3.jpg"
+                            width="130px"
+                            alt="img"
+                          />
+                          <div class="pt-3">
+                            <p class="ps-2 text-start">
+                              <strong>Kobe Byant</strong>
+                            </p>
+                            <div class="text-start ps-2 pt-3 text-warning">
+                              &nbsp<i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="ps-2 pt-1 text-light">
+                              <p>december 18, 2022</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p
+                          class="pt-3 ms-5 text-start text-light"
+                          style="width: 300px"
+                        >
+                          Perfect place for a getaway. Housewares are not the
+                          cheapy ones. Beach view was fantastic. Surroundings
+                          are very well maintained and clean. House itself was
+                          clean and you will feel right at home
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="ps-3 pe-3 pt-3 pb-3">
+                      <div class="d-flex">
+                        <div class="d-flex">
+                          <img
+                            class="rounded-circle"
+                            src="/album1/artist/aa6.jpg"
+                            width="130px"
+                            alt="img"
+                          />
+                          <div class="pt-3">
+                            <p class="ps-2 text-start">
+                              <strong>Zach Byan</strong>
+                            </p>
+                            <div class="text-start ps-2 pt-3 text-warning">
+                              &nbsp<i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i
+                              ><i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="ps-2 pt-1 text-light">
+                              <p>febuary 14, 2024</p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <p
+                          class="pt-3 ms-5 text-start text-light"
+                          style="width: 300px"
+                        >
+                          The ates and the kuyas are very helpful and you can
+                          easily reach them anytime. Overall, my family and i
+                          had a wonderful stay and would definitely come back.
+                          By the way, the free suman and tsokolate was the best!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <div id="fifth" class="m-2 text-start">
-                <label for="subject">Subject:</label>
-                <input type="text" name="subject" id="subjext" />
+              <!--------------------------- eeee ------------------->
+              <div class="d-flex">
+                <div class="mt-5 border me-2">
+                  <h4>Contact Info</h4>
+                  <p class="mt-4">
+                    <i class="fa-solid fa-location-dot"></i>&nbsp
+                    <span class="text-light"
+                      >Sunnyvale 1 Subdivision BLK 11 Lot 1, San Vicente Street,
+                      Binangonan, Rizal</span
+                    >
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-phone"></i
+                    ><span class="text-light"> &nbsp 09123456789</span>
+                  </p>
+                  <p>
+                    <i class="fa-solid fa-envelope"></i
+                    ><span class="text-light"> &nbsp batchwd86@gmail.com</span>
+                  </p>
+                </div>
+                <div>
+                  <iframe
+                    class="rounded mt-5"
+                    style="width: 300px; height: 200px"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d212479.23677378843!2d121.11203913111346!3d14.45289304794272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c1590da28529%3A0xd3127a3c2d9a5925!2sSunnyvale%201%2C%20Binangonan%2C%20Rizal!5e0!3m2!1sen!2sph!4v1695094789382!5m2!1sen!2sph"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
               </div>
             </div>
-            <div id="sixth">
-              <label class="pb-2" for="message">Message:</label>
-              <textarea
-                name="message"
-                id="messge"
-                cols="10"
-                rows="5"
-                placeholder="Enter your message"
-              ></textarea>
-            </div>
-          </form>
-          <a href="#" class="btn btn-outline-light">Submit</a>
+          </div>
+
+          <!-- sdsdsd -->
         </div>
       </div>
     </section>
