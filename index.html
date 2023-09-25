@@ -111,7 +111,13 @@
             </ul>
 
             <div id="sign">
-              <a class="ms-5" href="#">Sign up</a>
+              <button
+                class="btn btn-outline-light"
+                onclick="document.getElementById('signup').style.display='block'"
+                style="width: auto"
+              >
+                Sign up
+              </button>
               <button
                 class="btn btn-outline-light"
                 onclick="document.getElementById('subscribe').style.display='block'"
@@ -129,7 +135,7 @@
       <!-- navbar end -->
 
       <!--######### showcase  #########-->
-      <section id="hero" class="position-relative">
+      <section id="hero" class="position-relative" style="width: 100%">
         <div class="container container-fluid">
           <div class="row container-liquid" style="height: 100%">
             <div class="col-xl-3"></div>
@@ -1178,12 +1184,12 @@
               >
                 <img
                   class="img-star"
+                  width="430"
                   href="/album1/ab9.jpg"
                   data-lightbox="image"
                   src="/album1/ab9.jpg"
                   data-aos="fade-right"
                   data-aos-duration="3000"
-                  width="430"
                   alt="image"
                 />
               </a>
@@ -1909,16 +1915,17 @@
                             />
                             <div class="pt-3 travis">
                               <p class="ps-2 text-start">
-                                <strong>Zach Byan</strong>
+                                <strong>Lebron James Jr.</strong>
                               </p>
                               <div class="text-start ps-2 pt-3 text-warning">
                                 <i class="fa-solid fa-star"></i
                                 ><i class="fa-solid fa-star"></i
                                 ><i class="fa-solid fa-star"></i
                                 ><i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
                               </div>
                               <div class="ps-2 pt-1 text-light">
-                                <p>febuary 14, 2024</p>
+                                <p>November 14, 2024</p>
                               </div>
                             </div>
                           </div>
@@ -2060,13 +2067,16 @@
           />
 
           <button type="submit">Login</button>
-          <label>
-            <input type="checkbox" checked="checked" name="remember" /> Remember
-            me
-          </label>
+          <div class="d-flex justify-content-between">
+            <label>
+              <input type="checkbox" checked="checked" name="remember" />
+              Remember me
+            </label>
+            <span class="psw pt-0">Forgot <a href="#">password?</a></span>
+          </div>
         </div>
 
-        <div class="container" style="background-color: #f1f1f1">
+        <div class="container sign" style="background-color: #f1f1f1">
           <button
             type="button"
             onclick="document.getElementById('subscribe').style.display='none'"
@@ -2074,7 +2084,98 @@
           >
             Cancel
           </button>
-          <span class="psw">Forgot <a href="#">password?</a></span>
+
+          <span
+            class="psw"
+            onclick="document.getElementById('subscribe').style.display='none'"
+          >
+            Not a member?
+            <a
+              href="#signup"
+              onclick="document.getElementById('signup').style.display='block'"
+              >Sign up here</a
+            >
+          </span>
+        </div>
+      </form>
+    </div>
+    <!-- Modal sign up -->
+    <div id="signup" class="modal text-dark">
+      <form
+        class="modal-content animate"
+        action="/action_page.php"
+        method="post"
+      >
+        <div class="imgcontainer">
+          <span
+            onclick="document.getElementById('signup').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+          <img src="/img/aaas.png" width="10" alt="Avatar" class="avatar" />
+        </div>
+
+        <div class="container">
+          <label for="fname"><b>Firstname</b></label>
+          <input
+            type="text"
+            placeholder="Enter Firstname"
+            name="fname"
+            required
+          />
+
+          <label for="lname"><b>Lastname</b></label>
+          <input
+            type="text"
+            placeholder="Enter Lastname"
+            name="lname"
+            required
+          />
+
+          <label for="uname"><b>Username</b></label>
+          <input
+            type="text"
+            placeholder="Enter Username"
+            name="uname"
+            required
+          />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit">Sign up</button>
+          <label class="justify-content-center d-flex mt-3">
+            <input type="checkbox" checked="checked" name="remember" /> Accept
+            the terms and condition policy
+          </label>
+        </div>
+
+        <div class="container mt-3" style="background-color: #f1f1f1">
+          <button
+            type="button"
+            onclick="document.getElementById('signup').style.display='none'"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+          <span
+            class="psw"
+            onclick="document.getElementById('signup').style.display='none'"
+            >Already have an accout?
+            <a
+              href="#subscribe"
+              onclick="document.getElementById('subscribe').style.display='block'"
+              style="width: auto"
+            >
+              Login here
+            </a></span
+          >
         </div>
       </form>
     </div>

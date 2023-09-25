@@ -44,7 +44,7 @@ nav .container a:after {
   bottom: 1px;
   left: -4px;
   transform: scaleX(0);
-  box-shadow: 0 10px 0 #04aa6d;
+  box-shadow: 0 10px 0 #e2b60b;
   transform-origin: bottom right;
   transition: transform 0.5s ease-out;
 }
@@ -60,7 +60,7 @@ nav .container ul li a:hover:after {
 }
 
 #navbar .nav-link.active {
-  background-color: #04aa6d;
+  background-color: #e2b60b;
   border-radius: 5px;
   color: white;
 }
@@ -169,10 +169,12 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-
-  color: #04aa6d;
+  width: 100%;
+  color: #e2b60b;
 }
-
+#song p {
+  color: #fff;
+}
 #artist {
   padding: 5rem 0;
 }
@@ -186,7 +188,8 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  color: #04aa6d;
+  color: #e2b60b;
+  width: 100%;
 }
 
 /* form .first,
@@ -267,7 +270,7 @@ input[type="password"] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04aa6d;
+  background-color: #e2b60b;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -393,7 +396,8 @@ span.psw {
   height: 50px;
   width: 50px;
 }
-#subscribe form {
+#subscribe form,
+#signup form {
   width: 30%;
 }
 /* review */
@@ -723,7 +727,7 @@ span.psw {
   padding-top: 5rem;
 }
 .playsheet .text-center:hover {
-  background-color: #048d5b;
+  background-color: #e2b60b;
   border-radius: 5px;
   /* color: black; */
   transition: ease-out 0.5s;
@@ -759,7 +763,7 @@ span.psw {
   width: 30vw;
 }
 .h-current {
-  box-shadow: 0 5px 0 #04aa6d;
+  box-shadow: 0 5px 0 #e2b60b;
 }
 @media (max-width: 900px) {
   .padding-banner .img-banner h2 {
@@ -772,11 +776,13 @@ span.psw {
 }
 
 /*----------------- review ----------*/
-
+.rev-img {
+  height: 20vh;
+}
 .review-1 img,
 .review-2 img,
 .review-3 img {
-  height: 60vh;
+  /* height: 60vh; */
 }
 .review-1,
 .aside {
@@ -879,7 +885,7 @@ form .second {
     margin: 0;
   }
   .rov-rov {
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
   .map iframe {
     width: 100%;
@@ -916,4 +922,15 @@ form .second {
   .prof-img {
     display: block;
   }
+}
+.rev-1 .pb-3 {
+  width: 100%;
+}
+footer i {
+  color: #e2b60b;
+}
+.sign {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
