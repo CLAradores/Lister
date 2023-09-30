@@ -68,10 +68,13 @@
           ><strong class="fs-3">L i s t e r</strong></a
         >
         <a
-          class="navbar-toggler bg-white"
+          class="navbar-toggler btn bg-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbeer"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </a>
@@ -80,10 +83,23 @@
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="index.html">Home</a>
             </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="platlist.html">Playlist </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="event.html">Event</a>
+            </li>
           </ul>
 
           <div id="sign">
-            <a class="ms-5" href="#">Sign up</a>
+            <button
+              class="btn btn-outline-light"
+              onclick="document.getElementById('signup').style.display='block'"
+              style="width: auto"
+            >
+              Sign up
+            </button>
             <button
               class="btn btn-outline-light"
               onclick="document.getElementById('subscribe').style.display='block'"
@@ -139,7 +155,7 @@
             /></a>
           </div>
         </div>
-        <div class="border p-2 mt-5 text-light row">
+        <div class="p-2 text-light d-flex">
           <div class="col-xl-5"></div>
           <div class="mt-3 col-xl-4">
             <h5>All Premium Plans include:</h5>
